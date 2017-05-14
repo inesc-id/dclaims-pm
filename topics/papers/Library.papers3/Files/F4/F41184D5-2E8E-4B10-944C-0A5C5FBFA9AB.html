@@ -1,0 +1,1101 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.5,user-scalable=yes">
+    <meta name="citation_publisher" content="Springer, Berlin, Heidelberg"/>
+    <meta name="citation_title" content="Proofs of Space"/>
+    <meta name="citation_doi" content="10.1007/978-3-662-48000-7_29"/>
+    <meta name="citation_language" content="en"/>
+    <meta name="citation_abstract_html_url" content="https://link.springer.com/chapter/10.1007/978-3-662-48000-7_29"/>
+    <meta name="citation_fulltext_html_url" content="https://link.springer.com/chapter/10.1007/978-3-662-48000-7_29"/>
+    <meta name="citation_pdf_url" content="https://link.springer.com/content/pdf/10.1007%2F978-3-662-48000-7_29.pdf"/>
+    <meta name="citation_springer_api_url" content="http://api.springer.com/metadata/pam?q&#x3D;doi:10.1007/978-3-662-48000-7_29&amp;api_key&#x3D;"/>
+    <meta name="citation_firstpage" content="585"/>
+    <meta name="citation_lastpage" content="605"/>
+    <meta name="citation_author" content="Stefan Dziembowski"/>
+    <meta name="citation_author_institution" content="University of Warsaw"/>
+    <meta name="citation_author_email" content="stefan@dziembowski.net"/>
+    <meta name="citation_author" content="Sebastian Faust"/>
+    <meta name="citation_author_institution" content="Ruhr-University Bochum"/>
+    <meta name="citation_author" content="Vladimir Kolmogorov"/>
+    <meta name="citation_author_institution" content="IST Austria"/>
+    <meta name="citation_author" content="Krzysztof Pietrzak"/>
+    <meta name="citation_author_institution" content="IST Austria"/>
+    <meta name="dc.identifier" content="10.1007/978-3-662-48000-7_29"/>
+    <meta name="format-detection" content="telephone&#x3D;no"/>
+    <meta name="meta:description" content="Proofs of work (PoW) have been suggested by Dwork and Naor (Crypto’92) as protection to a shared resource. The basic idea is to ask the service requestor to dedicate some non-trivial amount of computa"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Proofs of Space"/>
+    <meta name="twitter:description" content="Proofs of work (PoW) have been suggested by Dwork and Naor (Crypto’92) as protection to a shared resource. The basic idea is to ask the service requestor to dedicate some non-trivial amount of computa"/>
+    <meta name="twitter:image" content="https://static-content.springer.com/cover/book/978-3-662-48000-7.jpg"/>
+    <meta name="twitter:image:alt" content="Content cover image"/>
+    <meta name="twitter:site" content="SpringerLink"/>
+    <meta name="citation_inbook_title" content="Advances in Cryptology -- CRYPTO 2015"/>
+    <meta name="citation_publication_date" content="2015/8/16"/>
+    <meta name="citation_conference_series_id" content="springer/crypto"/>
+    <meta name="citation_conference_title" content="Annual Cryptology Conference"/>
+    <meta name="citation_conference_sequence_num" content="35"/>
+    <meta name="citation_conference_abbrev" content="CRYPTO"/>
+    <meta property="og:title" content="Proofs of Space"/>
+    <meta property="og:description" content="Proofs of work (PoW) have been suggested by Dwork and Naor (Crypto’92) as protection to a shared resource. The basic idea is to ask the service requestor to dedicate some non-trivial amount of computa"/>
+    <meta property="og:type" content="Paper"/>
+    <meta property="og:url" content="https://link.springer.com/chapter/10.1007/978-3-662-48000-7_29"/>
+    <meta property="og:image" content="https://link.springer.com/springerlink-static/1231500462/images/png/SL-Square.png"/>
+    <meta property="og:site_name" content="SpringerLink"/>
+
+        <title>Proofs of Space | SpringerLink</title>
+        <link rel="canonical" href="https://link.springer.com/chapter/10.1007/978-3-662-48000-7_29"/>
+        <link rel="shortcut icon" href="/springerlink-static/1231500462/images/favicon/favicon.ico" />
+<link rel="icon" sizes="16x16 32x32 48x48" href="/springerlink-static/1231500462/images/favicon/favicon.ico">
+<link rel="icon" sizes="16x16" type="image/png" href="/springerlink-static/1231500462/images/favicon/favicon-16x16.png">
+<link rel="icon" sizes="32x32" type="image/png" href="/springerlink-static/1231500462/images/favicon/favicon-32x32.png">
+<link rel="icon" sizes="48x48" type="image/png" href="/springerlink-static/1231500462/images/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon-precomposed" href="/springerlink-static/1231500462/images/favicon/app-icon-iphone@3x.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/springerlink-static/1231500462/images/favicon/ic_launcher_hdpi.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/springerlink-static/1231500462/images/favicon/app-icon-ipad.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/springerlink-static/1231500462/images/favicon/app-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/springerlink-static/1231500462/images/favicon/app-icon-iphone@2x.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/springerlink-static/1231500462/images/favicon/ic_launcher_xxhdpi.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/springerlink-static/1231500462/images/favicon/app-icon-ipad@2x.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/springerlink-static/1231500462/images/favicon/app-icon-iphone@3x.png" />
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/springerlink-static/1231500462/images/favicon/ic_launcher_xxhdpi.png">
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//google-analytics.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//www.googletagservices.com" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//static-content.springer.com" />
+        <link rel="stylesheet" href="/springerlink-static/1231500462/css/basic.css" media="screen">
+<link rel="stylesheet" href="/springerlink-static/1231500462/css/styles.css" class="js-ctm" media="only screen and (-webkit-min-device-pixel-ratio:0) and (min-color-index:0), (-ms-high-contrast: none), only all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm)">
+<link rel="stylesheet" href="/springerlink-static/1231500462/css/print.css" media="print">
+
+
+            <script id="webtrekk-properties">
+    var webtrekkProperties = {
+          trackDomain : "springergmbh01.webtrekk.net",
+          trackId : "935649882378213",
+            bpJson: {1:"2000444668;3000652191;3991329481",2:"Universidade de Lisboa Fac. Letras - Biblioteca;Instituto Superior Técnico IST;B-on Consortium Portugal"}
+      };
+    </script>
+    <script type="text/javascript" async src="/springerlink-static/1231500462/js/webtrekk_v4.min.js"></script>
+
+            <script>
+        var dataLayer = [{
+'GA Key':'UA-26408784-1',
+'Event Category':'Conference Paper',
+'Open Access':'N',
+'Labs':'Y',
+'DOI':'10.1007\/978-3-662-48000-7_29',
+'VG Wort Identifier':'pw-vgzm.415900-10.1007-978-3-662-48000-7_29',
+'HasAccess':'N',
+'Full HTML':'N',
+'Has Body':'Y',
+'Static Hash':'1231500462',
+'Has Preview':'N',
+'user':{'license': {'businessPartnerID': ['2000444668', '3000652191', '3991329481'], 'businessPartnerIDString': '2000444668|3000652191|3991329481'}},
+'content':{'type': 'chapter', 'book': {'seriesTitle': 'Lecture Notes in Computer Science', 'bookProductType': 'Proceedings', 'eIsbn': '978-3-662-48000-7', 'seriesId': '558', 'title': 'Advances in Cryptology -- CRYPTO 2015', 'doi': '10.1007/978-3-662-48000-7'}, 'chapter': {'doi': '10.1007/978-3-662-48000-7_29'}, 'category': {'pmc': {'primarySubject': 'Computer Science', 'primarySubjectCode': 'I', 'secondarySubjects': {'1': 'Data Encryption', '2': 'Systems and Data Security', '3': 'Algorithm Analysis and Problem Complexity', '4': 'Discrete Mathematics in Computer Science'}, 'secondarySubjectCodes': {'1': 'I15033', '2': 'I14050', '3': 'I16021', '4': 'I17028'}}}},
+'Access Type':'noaccess',
+'Page':'chapter',
+'Bpids':'2000444668, 3000652191, 3991329481',
+'Bpnames':'Universidade de Lisboa Fac. Letras - Biblioteca, Instituto Superior T\u00E9cnico IST, B-on Consortium Portugal',
+'SubjectCodes':'SCI, SCI15033, SCI14050, SCI16021, SCI17028',
+'Country':'PT',
+'ConferenceSeriesId':'crypto',
+        }];
+
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?cache-busting=' + new Date().getTime() + '&id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WCF9Z9');</script>
+    <!-- End Google Tag Manager -->
+
+    </head>
+    <body>
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCF9Z9"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <nav class="skip-to">
+    <a class="skip-to__link skip-to__link--article" href="#main-content" title="Skip directly to the main content">Skip to main content</a>
+</nav>
+        <div class="page-wrapper">
+            <noscript>
+    <div class="nojs-banner u-interface">
+        <p>This service is more advanced with JavaScript available, learn more at <a
+                href="http://activatejavascript.org" target="_blank" rel="noopener noreferrer">http://activatejavascript.org</a>
+        </p>
+    </div>
+</noscript>
+                    <div id="leaderboard" class="leaderboard u-hide" data-component="SpringerLink.GoogleAdsLeaderboard"></div>
+
+                <header id="header" class="header u-interface" role="banner">
+        <div class="header__content">
+            <div class="header__menu-container">
+                    <a id="logo" class="site-logo" href="/" title="Go to homepage">
+            <span class="u-screenreader-only">SpringerLink</span>
+            <svg class="site-logo__springer" width="148" height="30" role="img" aria-label="SpringerLink Logo">
+                <image width="148" height="30" alt="SpringerLink Logo" src="/springerlink-static/1231500462/images/png/springerlink.png" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/springerlink-static/1231500462/images/svg/springerlink.svg"></image>
+            </svg>
+    </a>
+
+                    <div class="nav-container u-interface">
+    <div class="global-nav__wrapper">
+        <div class="search-button">
+            <a class="search-button__label" href="#search-container">
+                <span class="search-button__title">Search</span><svg width="12" height="12" viewBox="222 151 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" stroke="none" fill-rule="evenodd"></path>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="global-nav" data-component="SpringerLink.Menu" data-title="Navigation menu" data-text="Menu" role="navigation">
+            <li>
+                <a href="/">
+                    <span class="u-overflow-ellipsis">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contactus">
+                    <span class="u-overflow-ellipsis">Contact Us</span>
+                </a>
+            </li>
+
+                <li class="global-nav__logged-out">
+                    <a class="test-login-link" href="//link.springer.com/signup-login?previousUrl=https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-662-48000-7_29">
+                        <span class="u-overflow-ellipsis">Log in</span>
+                    </a>
+                </li>
+
+        </ul>
+    </div> 
+</div> 
+            </div>
+
+        </div>
+
+            <div id="search-container">
+                <div class="search">
+                    <div class="search__content">
+                        <form class="u-form-single-input " action="/search" method="get" role="search">
+    <label for="springerlink-search" class="u-screenreader-only">Search</label>
+    <input id="springerlink-search" name="query" type="search" autocomplete="off" value="" placeholder="Search">
+    <input class="u-hide-text" type="submit" value="Submit" title="Submit">
+    <svg class="u-vertical-align-absolute" width="13" height="13" viewBox="222 151 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <path d="M227 159C228.7 159 230 157.7 230 156 230 154.3 228.7 153 227 153 225.3 153 224 154.3 224 156 224 157.7 225.3 159 227 159L227 159 227 159 227 159ZM230 160.1L231.1 159 233.9 161.7C234.2 162.1 234.2 162.6 233.9 162.9 233.6 163.2 233.1 163.2 232.7 162.9L230 160.1 230 160.1 230 160.1 230 160.1ZM227 161L227 161C224.2 161 222 158.8 222 156 222 153.2 224.2 151 227 151 229.8 151 232 153.2 232 156 232 158.8 229.8 161 227 161L227 161 227 161 227 161 227 161Z" stroke="none" fill-rule="evenodd"/>
+    </svg>
+</form>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+            
+            
+
+            <main role="main" id="main-content">
+                <article class="main-wrapper">
+                    <div class="main-container uptodate-recommendations-off">
+                        <aside class="main-sidebar-left">
+                            <div class="main-sidebar-left__content">
+                                <div class="test-cover cover-image">
+        <a class="test-cover-link" href="/book/10.1007/978-3-662-48000-7" title="Advances in Cryptology -- CRYPTO 2015">
+            <img class="test-cover-image" src="https://static-content.springer.com/cover/book/978-3-662-48000-7.jpg" alt="Advances in Cryptology -- CRYPTO 2015" itemprop="image"/>
+        </a>
+
+</div>
+                            </div>
+                        </aside>
+
+                        <div class="main-body" data-role="NavigationContainer">
+                            <div class="main-body__content">
+
+                                
+    <div class="sticky-banner sticky-banner--narrow u-interface u-hide" aria-hidden="true" role="presentation" data-component="SpringerLink.StickyBanner" data-namespace="hasLink">
+        <div class="sticky-banner__container">
+                <a href="#buy" class="sticky-banner__buybox-link sticky-banner__buybox-link--sticky gtm-buybox-anchor">
+        Buy options
+    </a>
+
+        </div>
+    </div>
+
+
+                                
+
+
+                                <!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<div xmlns="http://www.w3.org/1999/xhtml" class="FulltextWrapper"><div class="ArticleHeader main-context"><div id="enumeration" class="enumeration">    <div>
+        <a class="gtm-confseries-link" data-test="ConfSeriesLink" href="/conference/crypto" >
+            <span data-test="ConfSeriesName"> Annual Cryptology Conference</span>
+        </a>
+    </div>
+<p class="test-LocationInConferenceProceeding icon--meta-keyline-before"><span data-test="ConferenceAcronym">CRYPTO 2015</span>: <span class="BookTitle"><a href="/book/10.1007/978-3-662-48000-7" class="gtm-book-link">Advances in Cryptology -- CRYPTO 2015</a></span><span class="page-numbers-info">
+              pp 585-605</span></p></div><div xmlns="" class="MainTitleSection"><h1 xmlns="http://www.w3.org/1999/xhtml" class="ChapterTitle" lang="en">Proofs of Space</h1></div><div class="authors u-clearfix" data-component="SpringerLink.Authors"><ul class="u-interface u-inline-list authors__title" data-role="AuthorsNavigation"><li><span>Authors</span></li><li><a href="#authorsandaffiliations" class="gtm-tab-authorsandaffiliations">Authors and affiliations</a></li></ul><div class="authors__list" data-role="AuthorsList"><ul class="test-contributor-names"><li><span itemprop="name" class="authors__name">Stefan Dziembowski</span><span class="author-information"><span class="authors__contact"><a href="mailto:stefan@dziembowski.net" title="stefan@dziembowski.net" itemprop="email" class="gtm-email-author">Email author</a></span></span></li><li><span itemprop="name" class="authors__name">Sebastian Faust</span></li><li><span itemprop="name" class="authors__name">Vladimir Kolmogorov</span></li><li><span itemprop="name" class="authors__name">Krzysztof Pietrzak</span></li></ul></div></div><div class="main-context__container main-context__container--duel" data-component="SpringerLink.ChapterMetrics"><div class="main-context__column"><span><span class="test-render-category">Conference paper</span></span><div class="article-dates" data-component="SpringerLink.ArticleDates"><dl><dt>First Online: </dt><dd class="article-dates__first-online"><time datetime="2015-08-01">01 August 2015</time></dd></dl><dl class="article-dates__history"></dl></div><p class="article-doi"><abbr title="Digital Object Identifier">DOI</abbr>:
+            10.1007/978-3-662-48000-7_29</p></div>    <div class="main-context__column">
+        <ul id="book-metrics" class="article-metrics">
+                <li class="article-metrics__item">
+                        <a class="article-metrics__link gtm-chaptercitations-count" href="http://www.bookmetrix.com/detail/chapter/db94768a-a16f-4dbd-9d26-a08a36bea4ee#citations" target="_blank" rel="noopener noreferrer"
+                           title="Visit Bookmetrix for full citation details" id="chaptercitations-link">
+                           <span id="chaptercitations-count-number" class="test-metric-count c-button-circle gtm-chaptercitations-count">4</span>
+                           <span class="test-metric-name article-metrics__label gtm-chaptercitations-count">Citations</span>
+                        </a>
+                </li>
+                <li class="article-metrics__item">
+                        <a class="article-metrics__link gtm-chaptermentions-count" href="http://www.bookmetrix.com/detail/chapter/db94768a-a16f-4dbd-9d26-a08a36bea4ee#altmetrics" target="_blank" rel="noopener noreferrer"
+                           title="Visit Bookmetrix for full social mention details" id="chaptermentions-link">
+                           <span id="chaptermentions-count-number" class="test-metric-count c-button-circle gtm-chaptermentions-count">1</span>
+                           <span class="test-metric-name article-metrics__label gtm-chaptermentions-count">Mentions</span>
+                        </a>
+                </li>
+                <li class="article-metrics__item">
+                        <a class="article-metrics__link gtm-chapterreaders-count" href="http://www.bookmetrix.com/detail/chapter/db94768a-a16f-4dbd-9d26-a08a36bea4ee#readers" target="_blank" rel="noopener noreferrer"
+                           title="Visit Bookmetrix for full Mendeley reader details" id="chapterreaders-link">
+                           <span id="chapterreaders-count-number" class="test-metric-count c-button-circle gtm-chapterreaders-count">28</span>
+                           <span class="test-metric-name article-metrics__label gtm-chapterreaders-count">Readers</span>
+                        </a>
+                </li>
+                <li class="article-metrics__item">
+                        <a class="article-metrics__link gtm-chapterdownloads-count" href="http://www.bookmetrix.com/detail/chapter/db94768a-a16f-4dbd-9d26-a08a36bea4ee#downloads" target="_blank" rel="noopener noreferrer"
+                           title="Visit Bookmetrix for full download details" id="chapterdownloads-link">
+                           <span id="chapterdownloads-count-number" class="test-metric-count c-button-circle gtm-chapterdownloads-count">1.6k</span>
+                           <span class="test-metric-name article-metrics__label gtm-chapterdownloads-count">Downloads</span>
+                        </a>
+                </li>
+        </ul>
+    </div>
+</div><span class="vol-info">
+                Part of the
+                <a class="gtm-book-series-link" href="/bookseries/558">Lecture Notes in Computer Science</a>
+                book series (LNCS, volume 9216)</span><div class="main-context__column"><dl class="article-cite"><dt class="test-cite-heading">Cite this paper as: </dt><dd id="citethis-text">Dziembowski S., Faust S., Kolmogorov V., Pietrzak K. (2015) Proofs of Space. In: Gennaro R., Robshaw M. (eds) Advances in Cryptology -- CRYPTO 2015. CRYPTO 2015. Lecture Notes in Computer Science, vol 9216. Springer, Berlin, Heidelberg</dd></dl></div></div><section class="Abstract" id="Abs1" tabindex="-1" lang="en"><h2 class="Heading">Abstract</h2><p id="Par1" class="Para">Proofs of work (PoW) have been suggested by Dwork and Naor (Crypto’92) as protection to a shared resource. The basic idea is to ask the service requestor to dedicate some non-trivial amount of computational work to every request. The original applications included prevention of spam and protection against denial of service attacks. More recently, PoWs have been used to prevent double spending in the Bitcoin digital currency system.</p><p id="Par2" class="Para">In this work, we put forward an alternative concept for PoWs – so-called <em class="EmphasisTypeItalic ">proofs of space</em> (PoS), where a service requestor must dedicate a significant amount of disk space as opposed to computation. We construct secure PoS schemes in the random oracle model (with one additional mild assumption required for the proof to go through), using graphs with high “pebbling complexity” and Merkle hash-trees. We discuss some applications, including follow-up work where a decentralized digital currency scheme called Spacecoin is constructed that uses PoS (instead of wasteful PoW like in Bitcoin) to prevent double spending.</p><p id="Par3" class="Para">The main technical contribution of this work is the construction of (directed, loop-free) graphs on <em class="EmphasisTypeItalic ">N</em> vertices with in-degree <span class="InlineEquation" id="IEq1">\(O(\log \log N)\)</span> such that even if one places <span class="InlineEquation" id="IEq2">\(\varTheta (N)\)</span> pebbles on the nodes of the graph, there’s a constant fraction of nodes that needs <span class="InlineEquation" id="IEq3">\(\varTheta (N)\)</span> steps to be pebbled (where in every step one can put a pebble on a node if all its parents have a pebble).</p></section><div class="HeaderArticleNotes"><aside class="ArticleNote ArticleNoteMisc"><p class="SimplePara">S. Dziembowski—Supported by the Foundation for Polish Science WELCOME/2010-4/2 grant founded within the framework of the EU Innovative Economy (National Cohesion Strategy) Operational Programme.</p><p class="SimplePara"> V. Kolmogorov—VK is supported by European Research Council under the European Unions Seventh Framework Programme (FP7/2007-2013)/ERC grant agreement no 616160.</p><p class="SimplePara"> K. Pietrzak—Research supported by ERC starting grant (259668-PSPC).</p></aside></div><div class="article-actions--inline" id="article-actions--inline" data-component="article-actions--inline"></div><aside class="Bibliography" id="Bib1" tabindex="-1"><h3 class="Heading">References</h3><div class="content"><ol class="BibliographyWrapper"><li class="Citation"><div class="CitationNumber">1.</div><div class="CitationContent" id="CR1">Abadi, M., Burrows, M., Wobber, T.: Moderately hard and memory-bound functions. In: NDSS 2003. The Internet Society, February 2003<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">2.</div><div class="CitationContent" id="CR2">Alwen, J., Serbinenko, V.: High parallel complexity graphs and memory-hard functions. In: Symposium on Theory of Computing, STOC 2015 (2015)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">3.</div><div class="CitationContent" id="CR3">Anderson, N.: Mining Bitcoins takes power, but is it an “environmental disaster”? April 2013. <span class="ExternalRef"><a target="_blank" rel="noopener noreferrer" href="http://tinyurl.com/cdh95at"><span class="RefSource">http://tinyurl.com/cdh95at</span></a></span>
+                                    <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">4.</div><div class="CitationContent" id="CR4"> Ateniese, G., Bonacina, I., Faonio, A., Galesi, N.: Proofs of space: when space is of the essence. In: Abdalla, M., De Prisco, R. (eds.) SCN 2014. LNCS, vol. 8642, pp. 538–557. Springer, Heidelberg (2014) <span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Proofs%20of%20space%3A%20when%20space%20is%20of%20the%20essence&amp;author=G.%20Ateniese&amp;author=I.%20Bonacina&amp;author=A.%20Faonio&amp;author=N.%20Galesi&amp;pages=538-557&amp;publication_year=2014"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">5.</div><div class="CitationContent" id="CR5">Ateniese, G., Burns, R.C., Curtmola, R., Herring, J., Kissner, L., Peterson, Z.N.J., Song, D.: Provable data possession at untrusted stores. In: Ning, P., De Capitani di Vimercati, S., Syverson, P.F. (eds.) ACM CCS 2007, pp. 598–609. ACM Press, October 2007<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">6.</div><div class="CitationContent" id="CR6">Back, A.: Hashcash - a denial of service counter-measure (2002). <span class="ExternalRef"><a target="_blank" rel="noopener noreferrer" href="http://www.hashcash.org/papers/hashcash.pdf"><span class="RefSource">http://www.hashcash.org/papers/hashcash.pdf</span></a></span>
+                                    <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">7.</div><div class="CitationContent" id="CR7">Barak, B., Goldreich, O.: Universal arguments and their applications. SIAM J. Comput. <strong class="EmphasisTypeBold ">38</strong>(5), 1661–1694 (2008)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a class="gtm-reference" data-reference-type="MathSciNet" target="_blank" rel="noopener noreferrer" href="http://www.ams.org/mathscinet-getitem?mr=2476271"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1137/070709244"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceZLBID"><a class="gtm-reference" data-reference-type="MATH" target="_blank" rel="noopener noreferrer" href="http://www.emis.de/MATH-item?1180.94047"><span><span>MATH</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Universal%20arguments%20and%20their%20applications&amp;author=B.%20Barak&amp;author=O.%20Goldreich&amp;journal=SIAM%20J.%20Comput.&amp;volume=38&amp;issue=5&amp;pages=1661-1694&amp;publication_year=2008"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">8.</div><div class="CitationContent" id="CR8">Bellare, M., Rogaway, P.: Random oracles are practical: a paradigm for designing efficient protocols. In: Ashby, V. (ed.) ACM CCS 1993, pp. 62–73. ACM Press, November 1993<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">9.</div><div class="CitationContent" id="CR9">Bowers, K.D., Juels, A., Oprea, A.: Proofs of retrievability: theory and implementation. In: CCSW, pp. 43–54 (2009)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">10.</div><div class="CitationContent" id="CR10">Buhrman, H., Cleve, R., Koucký, M., Loff, B., Speelman, P.: Computing with a full memory: catalytic space. In: Symposium on Theory of Computing, STOC 2014, May 31 - June 03 2014, pp. 857–866, New York, NY, USA (2014)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">11.</div><div class="CitationContent" id="CR11">Canetti, R., Goldreich, O., Halevi, S.: The random oracle methodology, revisited (preliminary version). In: 30th ACM STOC, pp. 209–218. ACM Press, May 1998<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">12.</div><div class="CitationContent" id="CR12"> Canetti, R., Halevi, S., Steiner, M.: Mitigating dictionary attacks on password-protected local storage. In: Dwork, C. (ed.) CRYPTO 2006. LNCS, vol. 4117, pp. 160–179. Springer, Heidelberg (2006) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/11818175_10"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Mitigating%20dictionary%20attacks%20on%20password-protected%20local%20storage&amp;author=R.%20Canetti&amp;author=S.%20Halevi&amp;author=M.%20Steiner&amp;pages=160-179&amp;publication_year=2006"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">13.</div><div class="CitationContent" id="CR13">Di Pietro, R., Mancini, L.V., Law, Y.W., Etalle, S., Havinga, P.: Lkhw: a directed diffusion-based secure multicast scheme for wireless sensor networks. In: 2003 Proceedings of the International Conference on Parallel Processing Workshops, pp. 397–406 (2003)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">14.</div><div class="CitationContent" id="CR14"> Douceur, J.R.: The sybil attack. In: Druschel, P., Kaashoek, M.F., Rowstron, A. (eds.) IPTPS 2002. LNCS, vol. 2429, pp. 251–260. Springer, Heidelberg (2002) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/3-540-45748-8_24"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=The%20sybil%20attack&amp;author=JR.%20Douceur&amp;pages=251-260&amp;publication_year=2002"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">15.</div><div class="CitationContent" id="CR15"> Dwork, C., Goldberg, A.V., Naor, M.: On memory-bound functions for fighting spam. In: Boneh, D. (ed.) CRYPTO 2003. LNCS, vol. 2729, pp. 426–444. Springer, Heidelberg (2003) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/978-3-540-45146-4_25"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=On%20memory-bound%20functions%20for%20fighting%20spam&amp;author=C.%20Dwork&amp;author=AV.%20Goldberg&amp;author=M.%20Naor&amp;pages=426-444&amp;publication_year=2003"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">16.</div><div class="CitationContent" id="CR16"> Dwork, C., Naor, M.: Pricing via processing or combatting junk mail. In: Brickell, E.F. (ed.) CRYPTO 1992. LNCS, vol. 740, pp. 139–147. Springer, Heidelberg (1993) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/3-540-48071-4_10"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Pricing%20via%20processing%20or%20combatting%20junk%20mail&amp;author=C.%20Dwork&amp;author=M.%20Naor&amp;pages=139-147&amp;publication_year=1993"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">17.</div><div class="CitationContent" id="CR17"> Dwork, C., Naor, M., Wee, H.M.: Pebbling and proofs of work. In: Shoup, V. (ed.) CRYPTO 2005. LNCS, vol. 3621, pp. 37–54. Springer, Heidelberg (2005) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/11535218_3"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Pebbling%20and%20proofs%20of%20work&amp;author=C.%20Dwork&amp;author=M.%20Naor&amp;author=HM.%20Wee&amp;pages=37-54&amp;publication_year=2005"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">18.</div><div class="CitationContent" id="CR18">Dziembowski, S., Faust, S., Kolmogorov, V., Pietrzak, K.: Proofs of space. Cryptology ePrint Archive, Report 2013/796 (2013). <span class="ExternalRef"><a target="_blank" rel="noopener noreferrer" href="http://eprint.iacr.org/2013/796"><span class="RefSource">http://eprint.iacr.org/2013/796</span></a></span>
+                                    <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">19.</div><div class="CitationContent" id="CR19"> Dziembowski, S., Kazana, T., Wichs, D.: Key-evolution schemes resilient to space-bounded leakage. In: Rogaway, P. (ed.) CRYPTO 2011. LNCS, vol. 6841, pp. 335–353. Springer, Heidelberg (2011) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/978-3-642-22792-9_19"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Key-evolution%20schemes%20resilient%20to%20space-bounded%20leakage&amp;author=S.%20Dziembowski&amp;author=T.%20Kazana&amp;author=D.%20Wichs&amp;pages=335-353&amp;publication_year=2011"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">20.</div><div class="CitationContent" id="CR20"> Dziembowski, S., Kazana, T., Wichs, D.: One-time computable self-erasing functions. In: Ishai, Y. (ed.) TCC 2011. LNCS, vol. 6597, pp. 125–143. Springer, Heidelberg (2011) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/978-3-642-19571-6_9"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=One-time%20computable%20self-erasing%20functions&amp;author=S.%20Dziembowski&amp;author=T.%20Kazana&amp;author=D.%20Wichs&amp;pages=125-143&amp;publication_year=2011"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">21.</div><div class="CitationContent" id="CR21">Erdös, P., Graham, R.L., Szemerédi, E.: On sparse graphs with dense long paths. Technical report STAN-CS-75-504, Stanford University, Computer Science Department (1975)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">22.</div><div class="CitationContent" id="CR22"> Franklin, K.M., Malkhi, D.: Auditable metering with lightweight security. In: Luby, M., Rolim, J.D.P., Serna, M. (eds.) FC 1997. LNCS, vol. 1318, pp. 151–160. Springer, Heidelberg (1997) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/3-540-63594-7_75"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Auditable%20metering%20with%20lightweight%20security&amp;author=KM.%20Franklin&amp;author=D.%20Malkhi&amp;pages=151-160&amp;publication_year=1997"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">23.</div><div class="CitationContent" id="CR23">Goldwasser, S., Kalai, Y.T.: On the (in)security of the Fiat-Shamir paradigm. In: 44th FOCS, pp. 102–115. IEEE Computer Society Press, October 2003<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">24.</div><div class="CitationContent" id="CR24"> Golle, P., Jarecki, S., Mironov, I.: Cryptographic primitives enforcing communication and storage complexity. In: Blaze, M. (ed.) FC 2002. LNCS, vol. 2357, pp. 120–135. Springer, Heidelberg (2003) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/3-540-36504-4_9"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Cryptographic%20primitives%20enforcing%20communication%20and%20storage%20complexity&amp;author=P.%20Golle&amp;author=S.%20Jarecki&amp;author=I.%20Mironov&amp;pages=120-135&amp;publication_year=2003"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">25.</div><div class="CitationContent" id="CR25">Gratzer, V., Naccache, D.: Alien vs. quine. IEEE Secur. Priv. <strong class="EmphasisTypeBold ">5</strong>(2), 26–31 (2007)<span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1109/MSP.2007.28"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Alien%20vs.%20quine&amp;author=V.%20Gratzer&amp;author=D.%20Naccache&amp;journal=IEEE%20Secur.%20Priv.&amp;volume=5&amp;issue=2&amp;pages=26-31&amp;publication_year=2007"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">26.</div><div class="CitationContent" id="CR26">Haitner, I., Hoch, J.J., Reingold, O., Segev, G.: Finding collisions in interactive protocols - a tight lower bound on the round complexity of statistically-hiding commitments. In: 48th FOCS, pp.669–679. IEEE Computer Society Press, October 2007<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">27.</div><div class="CitationContent" id="CR27">Hellman, M.E.: A cryptanalytic time-memory trade-off. IEEE Trans. Inf. Theory <strong class="EmphasisTypeBold ">26</strong>(4), 401–406 (1980)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a class="gtm-reference" data-reference-type="MathSciNet" target="_blank" rel="noopener noreferrer" href="http://www.ams.org/mathscinet-getitem?mr=581786"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1109/TIT.1980.1056220"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceZLBID"><a class="gtm-reference" data-reference-type="MATH" target="_blank" rel="noopener noreferrer" href="http://www.emis.de/MATH-item?0436.94016"><span><span>MATH</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=A%20cryptanalytic%20time-memory%20trade-off&amp;author=ME.%20Hellman&amp;journal=IEEE%20Trans.%20Inf.%20Theory&amp;volume=26&amp;issue=4&amp;pages=401-406&amp;publication_year=1980"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">28.</div><div class="CitationContent" id="CR28">Hopcroft, J., Paul, W., Valiant, L.: On time versus space. J. ACM <strong class="EmphasisTypeBold ">24</strong>(2), 332–337 (1977)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a class="gtm-reference" data-reference-type="MathSciNet" target="_blank" rel="noopener noreferrer" href="http://www.ams.org/mathscinet-getitem?mr=443428"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1145/322003.322015"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceZLBID"><a class="gtm-reference" data-reference-type="MATH" target="_blank" rel="noopener noreferrer" href="http://www.emis.de/MATH-item?0358.68082"><span><span>MATH</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=On%20time%20versus%20space&amp;author=J.%20Hopcroft&amp;author=W.%20Paul&amp;author=L.%20Valiant&amp;journal=J.%20ACM&amp;volume=24&amp;issue=2&amp;pages=332-337&amp;publication_year=1977"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">29.</div><div class="CitationContent" id="CR29">Jakobsson, M., Juels, A.: Proofs of work and bread pudding protocols. In: Preneel, B. (ed.) Proceedings of the IFIP Conference on Communications and Multimedia Security, vol. 152, pp. 258–272. Kluwer (1999)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">30.</div><div class="CitationContent" id="CR30">Juels, A., Brainard, J.G.: Client puzzles: a cryptographic countermeasure against connection depletion attacks. In: NDSS 1999. The Internet Society, February 1999<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">31.</div><div class="CitationContent" id="CR31">Juels, A., Kaliski Jr., B.S.: Pors: proofs of retrievability for large files. In: Ning, P., De Capitani di Vimercati, S., Syverson, P.F. (eds.) ACM CCS 07, pp. 584–597. ACM Press, October 2007<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">32.</div><div class="CitationContent" id="CR32"> Karvelas, N.P., Kiayias, A.: Efficient proofs of secure erasure. In: Abdalla, M., De Prisco, R. (eds.) SCN 2014. LNCS, vol. 8642, pp. 520–537. Springer, Heidelberg (2014) <span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Efficient%20proofs%20of%20secure%20erasure&amp;author=NP.%20Karvelas&amp;author=A.%20Kiayias&amp;pages=520-537&amp;publication_year=2014"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">33.</div><div class="CitationContent" id="CR33">Lengauer, T., Tarjan, R.E.: Asymptotically tight bounds on time-space trade-offs in a pebble game. J. ACM <strong class="EmphasisTypeBold ">29</strong>(4), 1087–1130 (1982)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a class="gtm-reference" data-reference-type="MathSciNet" target="_blank" rel="noopener noreferrer" href="http://www.ams.org/mathscinet-getitem?mr=674259"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1145/322344.322354"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceZLBID"><a class="gtm-reference" data-reference-type="MATH" target="_blank" rel="noopener noreferrer" href="http://www.emis.de/MATH-item?0495.68037"><span><span>MATH</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Asymptotically%20tight%20bounds%20on%20time-space%20trade-offs%20in%20a%20pebble%20game&amp;author=T.%20Lengauer&amp;author=RE.%20Tarjan&amp;journal=J.%20ACM&amp;volume=29&amp;issue=4&amp;pages=1087-1130&amp;publication_year=1982"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">34.</div><div class="CitationContent" id="CR34"> Maurer, U.M., Renner, R.S., Holenstein, C.: Indifferentiability, impossibility results on reductions, and applications to the random oracle methodology. In: Naor, M. (ed.) TCC 2004. LNCS, vol. 2951, pp. 21–39. Springer, Heidelberg (2004) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/978-3-540-24638-1_2"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Indifferentiability%2C%20impossibility%20results%20on%20reductions%2C%20and%20applications%20to%20the%20random%20oracle%20methodology&amp;author=UM.%20Maurer&amp;author=RS.%20Renner&amp;author=C.%20Holenstein&amp;pages=21-39&amp;publication_year=2004"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">35.</div><div class="CitationContent" id="CR35">Merkle, R.C.: Method of providing digital signatures. US Patent 4309569, 5 January 1982<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">36.</div><div class="CitationContent" id="CR36">Micali, S.: Computationally sound proofs. SIAM J. Comput. <strong class="EmphasisTypeBold ">30</strong>(4), 1253–1298 (2000)<span class="Occurrences"><span class="Occurrence OccurrenceAMSID"><a class="gtm-reference" data-reference-type="MathSciNet" target="_blank" rel="noopener noreferrer" href="http://www.ams.org/mathscinet-getitem?mr=1786760"><span><span>MathSciNet</span></span></a></span><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1137/S0097539795284959"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceZLBID"><a class="gtm-reference" data-reference-type="MATH" target="_blank" rel="noopener noreferrer" href="http://www.emis.de/MATH-item?1009.68053"><span><span>MATH</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Computationally%20sound%20proofs&amp;author=S.%20Micali&amp;journal=SIAM%20J.%20Comput.&amp;volume=30&amp;issue=4&amp;pages=1253-1298&amp;publication_year=2000"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">37.</div><div class="CitationContent" id="CR37"> Micali, S., Rivest, R.L.: Micropayments revisited. In: Preneel, B. (ed.) CT-RSA 2002. LNCS, vol. 2271, pp. 149–163. Springer, Heidelberg (2002) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/3-540-45760-7_11"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Micropayments%20revisited&amp;author=S.%20Micali&amp;author=RL.%20Rivest&amp;pages=149-163&amp;publication_year=2002"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">38.</div><div class="CitationContent" id="CR38">Nakamoto, S.: Bitcoin: a peer-to-peer electronic cash system (2009). <span class="ExternalRef"><a target="_blank" rel="noopener noreferrer" href="http://bitcoin.org/bitcoin.pdf"><span class="RefSource">http://bitcoin.org/bitcoin.pdf</span></a></span>
+                                    <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">39.</div><div class="CitationContent" id="CR39">Park, S., Pietrzak, K., Alwen, J., Fuchsbauer, G., Gazi, P.: Spacecoin: a cryptocurrency based on proofs of space. Cryptology ePrint Archive, Report 2015/528 (2015). <span class="ExternalRef"><a target="_blank" rel="noopener noreferrer" href="http://eprint.iacr.org/2015/528"><span class="RefSource">http://eprint.iacr.org/2015/528</span></a></span>
+                                    <span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">40.</div><div class="CitationContent" id="CR40">Paul, W.J., Tarjan, R.E., Celoni, J.R.: Space bounds for a game on graphs. Math. Syst. Theory 10(1), 239–251 (1976–1977)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">41.</div><div class="CitationContent" id="CR41"> Perito, D., Tsudik, G.: Secure code update for embedded devices via proofs of secure erasure. In: Gritzalis, D., Preneel, B., Theoharidou, M. (eds.) ESORICS 2010. LNCS, vol. 6345, pp. 643–662. Springer, Heidelberg (2010) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/978-3-642-15497-3_39"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Secure%20code%20update%20for%20embedded%20devices%20via%20proofs%20of%20secure%20erasure&amp;author=D.%20Perito&amp;author=G.%20Tsudik&amp;pages=643-662&amp;publication_year=2010"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">42.</div><div class="CitationContent" id="CR42">Rivest, R.L., Shamir, A.: Payword and micromint: two simple micropayment schemes. In: CryptoBytes, pp. 69–87 (1996)<span class="Occurrences"></span></div></li><li class="Citation"><div class="CitationNumber">43.</div><div class="CitationContent" id="CR43"> Rogaway, P.: Formalizing human ignorance. In: Nguyên, P.Q. (ed.) VIETCRYPT 2006. LNCS, vol. 4341, pp. 211–228. Springer, Heidelberg (2006) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/11958239_14"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Formalizing%20human%20ignorance&amp;author=P.%20Rogaway&amp;pages=211-228&amp;publication_year=2006"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">44.</div><div class="CitationContent" id="CR44"> Savage, J.E.: Models of Computation: Exploring the Power of Computing, 1st edn. Addison-Wesley Longman Publishing Co. Inc., Boston (1997) <span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Models%20of%20Computation%3A%20Exploring%20the%20Power%20of%20Computing&amp;author=JE.%20Savage&amp;publication_year=1997"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">45.</div><div class="CitationContent" id="CR45"> Simon, D.R.: Findings collisions on a one-way street: can secure hash functions be based on general assumptions? In: Nyberg, K. (ed.) EUROCRYPT 1998. LNCS, vol. 1403, pp. 334–345. Springer, Heidelberg (1998) <span class="Occurrences"><span class="Occurrence OccurrenceDOI"><a class="gtm-reference" data-reference-type="CrossRef" target="_blank" rel="noopener noreferrer" href="http://dx.doi.org/10.1007/BFb0054137"><span><span>CrossRef</span></span></a></span><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=Findings%20collisions%20on%20a%20one-way%20street%3A%20can%20secure%20hash%20functions%20be%20based%20on%20general%20assumptions%3F&amp;author=DR.%20Simon&amp;pages=334-345&amp;publication_year=1998"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">46.</div><div class="CitationContent" id="CR46"> Von Ahn, L., Blum, M., Hopper, N.J., Langford, J.: CAPTCHA: Using hard AI problems for security. In: Biham, E. (ed.) EUROCRYPT 2003. LNCS, vol. 2656, pp. 246–256. Springer, Heidelberg (2003) <span class="Occurrences"><span class="Occurrence OccurrenceGS"><a target="_blank" rel="noopener noreferrer" class="google-scholar-link gtm-reference" data-reference-type="Google Scholar" href="http://scholar.google.com/scholar_lookup?title=CAPTCHA%3A%20Using%20hard%20AI%20problems%20for%20security&amp;author=L.%20Ahn&amp;author=M.%20Blum&amp;author=NJ.%20Hopper&amp;author=J.%20Langford&amp;pages=246-256&amp;publication_year=2003"><span><span>Google Scholar</span></span></a></span></span></div></li><li class="Citation"><div class="CitationNumber">47.</div><div class="CitationContent" id="CR47">Waters, B., Juels, A., Halderman, J.A., Felten, E.W.: New client puzzle outsourcing techniques for dos resistance. In: Proceedings of the 11th ACM Conference on Computer and Communications Security, CCS 2004, pp. 246–256. ACM, New York (2004)<span class="Occurrences"></span></div></li></ol></div></aside><section class="Section1 RenderAsSection1"><h2 class="Heading" id="copyrightInformation">Copyright information</h2><div class="ArticleCopyright content"><div class="ChapterCopyright">© International Association for Cryptologic Research 2015</div></div></section><section id="authorsandaffiliations" class="Section1 RenderAsSection1"><h2 class="Heading">Authors and Affiliations</h2><div class="content authors-affiliations u-interface"><ul class="test-contributor-names"><li><span itemprop="name" class="authors-affiliations__name">Stefan Dziembowski</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-1">1</li></ul><span class="author-information"><span class="author-information__contact u-icon-before icon--email-before"><a href="mailto:stefan@dziembowski.net" title="stefan@dziembowski.net" itemprop="email" class="gtm-email-author">Email author</a></span></span></li><li><span itemprop="name" class="authors-affiliations__name">Sebastian Faust</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-2">2</li></ul></li><li><span itemprop="name" class="authors-affiliations__name">Vladimir Kolmogorov</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-3">3</li></ul></li><li><span itemprop="name" class="authors-affiliations__name">Krzysztof Pietrzak</span><ul class="authors-affiliations__indexes u-inline-list" data-role="AuthorsIndexes"><li data-affiliation="affiliation-3">3</li></ul></li></ul><ol class="test-affiliations"><li class="affiliation" data-test="affiliation-1" data-affiliation-highlight="affiliation-1" itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">1.</span><span class="affiliation__item"><span itemprop="name" class="affiliation__name">University of Warsaw</span><span itemprop="city" class="affiliation__city">Warszawa</span><span itemprop="country" class="affiliation__country">Poland</span></span></li><li class="affiliation" data-test="affiliation-2" data-affiliation-highlight="affiliation-2" itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">2.</span><span class="affiliation__item"><span itemprop="name" class="affiliation__name">Ruhr-University Bochum</span><span itemprop="city" class="affiliation__city">Bochum</span><span itemprop="country" class="affiliation__country">Germany</span></span></li><li class="affiliation" data-test="affiliation-3" data-affiliation-highlight="affiliation-3" itemprop="affiliation" itemscope="" itemtype="http://schema.org/Organization"><span class="affiliation__count">3.</span><span class="affiliation__item"><span itemprop="name" class="affiliation__name">IST Austria</span><span itemprop="city" class="affiliation__city">Klosterneuburg</span><span itemprop="country" class="affiliation__country">Austria</span></span></li></ol></div></section></div>
+
+                                <div class="collapsible-section uptodate-recommendations gtm-recommendations">
+    <h2 class="uptodate-recommendations__title collapsible-section__heading gtm-recommendations__title" id="uptodaterecommendations">Personalised recommendations</h2>
+    <div class="collapsible-section__content">
+        <div class="uptodate-recommendations__container">
+             <link rel="uptodate-inline" href="/springerlink-static/1231500462/css/recommendations.css"/>
+        </div>
+    </div>
+</div>
+                                <aside class="content-type-about" id="AboutThisContent">
+    <h2 class="Heading" id="aboutcontent">About this paper</h2>
+    <div class="content bibliographic-information">
+        
+            <div class="crossmark__adjacent">
+                    <ul class="bibliographic-information__list bibliographic-information__list--inline">
+            <li class="bibliographic-information__item">
+                <span class="bibliographic-information__title">Publisher Name</span>
+                <span class="bibliographic-information__value" id="publisher-name">Springer, Berlin, Heidelberg</span>
+            </li>
+            <li class="bibliographic-information__item">
+                <span class="bibliographic-information__title">Print ISBN</span>
+                <span class="bibliographic-information__value" id="print-isbn">978-3-662-47999-5</span>
+            </li>
+            <li class="bibliographic-information__item ">
+                <span class="bibliographic-information__title">Online ISBN</span>
+                <span class="bibliographic-information__value" id="electronic-isbn">978-3-662-48000-7</span>
+            </li>
+
+                <li class="bibliographic-information__item">
+            <span class="bibliographic-information__title">eBook Packages</span>
+                <span class="bibliographic-information__value"><a id="ebook-package" href="/search?facet-content-type&#x3D;%22Book%22&amp;package&#x3D;11645&amp;facet-start-year&#x3D;2015&amp;facet-end-year&#x3D;2015">Computer Science</a></span>
+        </li>
+
+    </ul>
+
+                <ul class="bibliographic-information__list">
+    <li class="bibliographic-information__item">
+        <a id="about-book" href="//www.springer.com/978-3-662-47999-5?wt_mc&#x3D;ThirdParty.SpringerLink.3.EPR653.About_eBook" class="gtm-about-this " >About this book</a>
+    </li>
+
+    <li class="bibliographic-information__item">
+        <a id="reprintsandpermissions-link" class="u-external" target="_blank" rel="noopener noreferrer" href="https://s100.copyright.com/AppDispatchServlet?publisherName&#x3D;Springer&amp;orderBeanReset&#x3D;true&amp;orderSource&#x3D;SpringerLink&amp;author&#x3D;Stefan+Dziembowski&amp;authorEmail&#x3D;stefan%40dziembowski.net&amp;contentID&#x3D;10.1007%2F978-3-662-48000-7_29&amp;openAccess&#x3D;false&amp;endPage&#x3D;605&amp;publicationDate&#x3D;2015&amp;startPage&#x3D;585&amp;title&#x3D;Proofs+of+Space&amp;imprint&#x3D;International+Association+for+Cryptologic+Research&amp;publication&#x3D;eBook&amp;authorAddress&#x3D;Warszawa%2C+Poland" title="Visit RightsLink for information about reusing this paper">Reprints and Permissions</a>
+    </li>
+</ul>
+            </div>
+        
+            
+    </div>
+</aside>
+
+                            </div>
+                        </div>
+
+                        <aside class="main-sidebar-right u-interface">
+                            <div data-role="sticky-wrapper">
+                                <div class="main-sidebar-right__content u-composite-layer" data-component="SpringerLink.StickySidebar">
+                                    <div class="article-actions" id="article-actions">
+                                        <h2 class="u-screenreader-only">Actions</h2>
+                                        
+        
+
+
+
+
+                                            <div id="buy">
+                                                
+
+
+<style type="text/css">
+    .buybox {
+        margin: 16px 0 0;
+        position: relative;
+    }
+    .buybox {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .buybox {
+        zoom: 1;
+    }
+    .buybox:after,
+    .buybox:before {
+        content: '';
+        display: table;
+    }
+    .buybox:after {
+        clear: both;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__header {
+        border: 1px solid #b3b3b3;
+        border-bottom: 0;
+        padding: 8px;
+        position: relative;
+        background-color: #f2f2f2;
+    }
+    .buybox__header .buybox__login {
+        font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-size: 1.4rem;
+        letter-spacing: .017em;
+        display: inline-block;
+        line-height: 1.2;
+        padding: 0;
+    }
+    .buybox__header .buybox__login:before {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: perspective(1px) translateY(-50%);
+        transform: perspective(1px) translateY(-50%);
+        content: '\A';
+        width: 34px;
+        height: 34px;
+        left: 10px;
+    }
+    /*---------------------------------*/
+    .buybox .buybox__body {
+        padding: 0;
+        padding-bottom: 16px;
+        position: relative;
+        text-align: center;
+        background-color: #fcfcfc;
+        border: 1px solid #b3b3b3;
+    }
+    /******/
+    .buybox__body .buybox__section {
+        padding: 16px 12px 0 12px;
+        text-align: left;
+    }
+    .buybox__section .buybox__buttons {
+        text-align: center;
+        width: 100%;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__body {
+        background-color: transparent;
+    }
+    .buybox.mycopy__buybox .buybox__section .buybox__buttons {
+        border-top: 0;
+        padding-top: 0;
+    }
+    /******/
+    .buybox__section:nth-child(2) .buybox__buttons {
+        border-top: 1px solid #b3b3b3;
+        padding-top: 20px;
+    }
+    .buybox__buttons .buybox__buy-button {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 6px 12px;
+        max-width: 180px
+    }
+    .buybox__buttons .buybox__price {
+        white-space: nowrap;
+        text-align: center;
+        font-size: larger;
+        padding-top: 6px;
+    }
+    .buybox__section .buybox__meta {
+        letter-spacing: 0;
+        padding-top: 12px;
+    }
+    .buybox__section .buybox__meta:only-of-type {
+        padding-top: 0;
+        position: relative;
+        bottom: 6px;
+    }
+    /********** mycopy buybox specific **********/
+    .buybox.mycopy__buybox .buybox__section .buybox__meta {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /******/
+    .buybox__meta .buybox__product-title {
+        display: inline;
+        font-weight: bold;
+    }
+    .buybox__meta .buybox__list {
+        line-height: 1.3;
+    }
+    .buybox__meta .buybox__list li {
+        position: relative;
+        padding-left: 1em;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    .buybox__meta .buybox__list li:before {
+        font-size: 1em;
+        content: '\2022';
+        float: left;
+        position: relative;
+        top: .1em;
+        font-family: serif;
+        font-weight: 600;
+        text-align: center;
+        line-height: inherit;
+        color: #666;
+        width: auto;
+        margin-left: -1em;
+    }
+    .buybox__meta .buybox__list li:last-child {
+        margin-bottom: 0;
+    }
+    /********** chapter buybox specific **********/
+    .buybox.chapter__buybox .buybox__section .buybox__meta {
+        border-top: 1px solid #d3d3d3;
+        padding-top: 12px;
+    }
+    .buybox.chapter__buybox .buybox__section .buybox__buy-ebook {
+        margin-bottom: 12px;
+    }
+    /******/
+    /*---------------------------------*/
+    .buybox .buybox__footer {
+        border: 1px solid #b3b3b3;
+        border-top: 0;
+        padding: 8px;
+        position: relative;
+        border-style: dashed;
+        line-height: 1.3;
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (min-width: 460px) and (max-width: 1074px) {
+        .buybox__body .buybox__section {
+            display: inline-block;
+            vertical-align: top;
+            padding: 12px 12px;
+            padding-bottom: 0;
+            text-align: left;
+            width: 48%;
+        }
+        .buybox__body .buybox__section {
+            padding-top: 16px;
+            padding-left: 0;
+        }
+        .buybox__section:nth-of-type(2) .buybox__meta {
+            border-left: 1px solid #d3d3d3;
+            padding-left: 28px;
+        }
+        .buybox__section:nth-of-type(2) .buybox__buttons {
+            border-top: 0;
+            padding-top: 0;
+            padding-left: 16px ;
+        }
+        .buybox__buttons .buybox__buy-button {
+        }
+        /********** article buybox specific **********/
+        .buybox.article__buybox .buybox__section:nth-of-type(2) {
+            margin-top: 16px;
+            padding-top: 0;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta {
+            margin-top: 40px;
+            padding-top: 0;
+            padding-bottom: 45px;
+        }
+        .buybox.article__buybox .buybox__section:nth-of-type(2) .buybox__meta:only-of-type {
+            margin-top: 8px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__section:first-child {
+            width: 69%;
+            padding-left: 12px ;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            width: 29%;
+        }
+        /********** chapter buybox specific **********/
+        .buybox.chapter__buybox .buybox__body {
+            display: flex;
+            align-items: stretch;
+            padding-left: 12px;
+            padding-top: 12px;
+        }
+        .buybox.chapter__buybox .buybox__section .buybox__meta {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            border-top: 0;
+            padding-top: 0;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+    @media screen and (max-width: 459px) {
+        /********** mycopy buybox specific **********/
+        .buybox.mycopy__buybox .buybox__body {
+            padding-bottom: 5px;
+        }
+        .buybox.mycopy__buybox .buybox__section:last-child {
+            text-align: center;
+            width: 100%;
+        }
+        .buybox.mycopy__buybox .buybox__buttons {
+            display: inline-block;
+            width: 150px ;
+        }
+        /******/
+    }
+    /*-----------------------------------------------------------------*/
+</style>
+
+<div class="buybox chapter__buybox" data-webtrekkTrackId="196033507532344" data-webtrekkContentId="SL-chapter">
+    <div class="buybox__header">
+        <span class="buybox__login">Log in to check access</span>
+    </div>
+    <div class="buybox__body">
+        <div class="buybox__section">
+            <div class="buybox__buttons">
+            
+                <div class="buybox__buy-ebook">
+                    <a
+                        data-product-id="978-3-662-48000-7_Advances in Cryptology -- CRYPTO 2"
+                        data-tracking-category="ebook"
+                        data-eCommerceParam_11="chapter-page"
+                        href="https://checkout.springer.com/checkout/add?wt_mc=ThirdParty.SpringerLink.3.EPR653.AbstractPage_EBook-new&isbn=978-3-662-48000-7"
+                        class="buybox__buy-button c-button c-button--blue"
+                        data-gtm="buybox__buy-button-ebook">
+                        <span class="buybox__buy" data-gtm="buybox__buy-button">Buy eBook</span>
+                    </a>
+                    <div class="buybox__price" data-gtm="buybox__buy-button">
+                        EUR&nbsp;74.96
+                    </div>
+                </div>
+            
+            
+                <form class="buybox__form" action="https://checkout.springer.com/checkout/add?wt_mc=ThirdParty.SpringerLink.3.EPR653.AbstractPage_Chapter-new" method="POST">
+                    
+                        <input type="hidden" name="type" value="chapter"/>
+                    
+                        <input type="hidden" name="doi" value="10.1007/978-3-662-48000-7_29"/>
+                    
+                        <input type="hidden" name="isxn" value="978-3-662-48000-7"/>
+                    
+                        <input type="hidden" name="contenttitle" value="Proofs of Space"/>
+                    
+                        <input type="hidden" name="copyrightyear" value="2015"/>
+                    
+                        <input type="hidden" name="year" value="2015"/>
+                    
+                        <input type="hidden" name="authors" value="Stefan Dziembowski, et al."/>
+                    
+                        <input type="hidden" name="title" value="Advances in Cryptology -- CRYPTO 2015"/>
+                    
+                        <input type="hidden" name="mac" value="d39ce37ffdc288f4bdba306c260a0f2c"/>
+                    
+                        <input type="hidden" name="returnurl" value="https://link.springer.com/chapter/10.1007/978-3-662-48000-7_29"/>
+                    
+                    <button
+                    data-product-id="10.1007/978-3-662-48000-7_29_Proofs of Space"
+                    data-tracking-category="ppv"
+                    data-eCommerceParam_11="chapter-page"
+                    type="submit"
+                    class="buybox__buy-button c-button c-button--blue"
+                    data-gtm="buybox__buy-button">
+                        <span class="buybox__buy" data-gtm="buybox__buy-button">Buy paper (PDF)</span>
+                    </button>
+                    <div class="buybox__price" data-gtm="buybox__buy-button">
+                        EUR&nbsp;30.69
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="buybox__section">
+            <div class="buybox__meta">
+                <ul class="buybox__list">
+                    <li>Instant download</li>
+                    <li>Readable on all devices</li>
+                    <li>Own it forever</li>
+                    <li>Local sales tax included if applicable</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="buybox__footer">
+        <a class="js-buybox__inst-sub-link" data-gtm="buybox__inst-sub-link" href="http://www.springer.com/gp/shop/subscriptions?wt_mc=ThirdParty.SpringerLink.3.EPR653.ChapterPage_Institutional-customers">
+            Learn about institutional subscriptions</a>
+    </div>
+
+    
+
+</div>
+
+<script>
+(function () {
+    var forEach = function (array, callback, scope) {
+        for (var i = 0; i < array.length; i++) {
+            callback.call(scope, i, array[i]);
+        }
+    };
+
+    var trackDomain = 'springergmbh01.webtrekk.net';
+    var domain = 'link.springer.com';
+    var loadEventSent = false;
+
+    var buyboxRoot = document.getElementsByClassName('buybox')[0];
+    var webtrekkTrackId = buyboxRoot.getAttribute('data-webtrekkTrackId');
+    var webtrekkContentId = buyboxRoot.getAttribute('data-webtrekkContentId');
+
+    function SubscriptionTrack(webtrekkTrackId) {
+        if (!webtrekkTrackId) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: 'springer_com.buybox',
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function Track(product, webtrekkTrackId, eCommerceParam_11, action) {
+        if (!product) return;
+
+        var data = {
+            trackDomain: trackDomain,
+            trackId: webtrekkTrackId,
+            domain: domain,
+            contentId: webtrekkContentId,
+            product: product.id,
+            productStatus: action,
+            productCategory: {
+                1: product.trackingCategory
+            },
+            customEcommerceParameter: {
+                9: domain,
+                11: eCommerceParam_11
+            },
+            customSessionParameter: {
+                2: getBusinessPartnerIds()
+            }
+        };
+
+        if (!window.webtrekkV3 && console) {
+            console.log('No webtrekk found.', data);
+            return;
+        }
+
+        return new webtrekkV3(data);
+    }
+
+    function trackAddToCart(trackingConfig) {
+        if (!trackingConfig) return;
+        trackingConfig.sendinfo();
+    }
+
+    function trackOnLoad(trackingConfig) {
+        if (loadEventSent) return;
+        loadEventSent = true;
+        if (!trackingConfig) return;
+        trackingConfig.sendinfo();
+    }
+
+    function trackSubscription(trackingConfig) {
+        if (!trackingConfig) return;
+        trackingConfig.sendinfo({linkId: 'inst. subscription info'});
+    }
+
+    function getBusinessPartnerIds() {
+        var businessPartnerIDs = [];
+        try {
+            var ids = window.dataLayer[0]["user"]["license"]["businessPartnerID"];
+            if(ids && ids.length) businessPartnerIDs = ids;
+        } catch(e) {}
+        return businessPartnerIDs.join(";");
+    }
+
+    var bindClickLinkHandle = function (link) {
+        if (!link) return;
+
+        link.addEventListener('click', function (event) {
+            trackSubscription(SubscriptionTrack(webtrekkTrackId));
+        });
+    };
+
+    var bindLoadButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        window.addEventListener('load', function (event) {
+            trackOnLoad(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'view'));
+        });
+    };
+
+    var bindClickButtonHandle = function (button) {
+        if (!button) return;
+
+        var productId = button.getAttribute('data-product-id');
+        var trackingCategory = button.getAttribute('data-tracking-category');
+        var eCommerceParam_11 = button.getAttribute('data-eCommerceParam_11');
+
+        button.addEventListener('click', function (event) {
+            trackAddToCart(Track({
+                id: productId,
+                trackingCategory: trackingCategory
+            }, webtrekkTrackId, eCommerceParam_11, 'add'));
+        });
+    };
+
+    var buyButtons = document.getElementsByClassName('buybox__buy-button');
+    forEach(buyButtons, function (index, button) {
+        bindLoadButtonHandle(button);
+        bindClickButtonHandle(button);
+    });
+
+    var sublinks = document.getElementsByClassName('js-buybox__inst-sub-link');
+    forEach(sublinks, function (index, link) {
+        bindClickLinkHandle(link);
+    });
+})();
+</script>
+
+                                            </div>
+                                        
+<div class="citations u-showTwoCol" data-component="SV.Dropdown" data-namespace="citations">
+    <h3 class="u-h4" data-role="button-dropdown__title">
+        Export citation
+    </h3>
+    <ul class="citations__content" data-role="button-dropdown__content">
+            <li>
+                <a href="//citation-needed.springer.com/v2/references/10.1007/978-3-662-48000-7_29?format&#x3D;refman&amp;flavour&#x3D;citation"
+                   title="Download this paper&#39;s citation as a .RIS file" class="gtm-export-citation" data-gtmlabel="RIS">
+                    <span class="citations__extension gtm-export-citation" data-gtmlabel="RIS">
+                        <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#0176C3"/></svg>
+                        .RIS
+                    </span>
+                    <span class="citations__types">
+                            <span>
+                                Papers
+                            </span>
+                            <span>
+                                Reference Manager
+                            </span>
+                            <span>
+                                RefWorks
+                            </span>
+                            <span>
+                                Zotero
+                            </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="//citation-needed.springer.com/v2/references/10.1007/978-3-662-48000-7_29?format&#x3D;endnote&amp;flavour&#x3D;citation"
+                   title="Download this paper&#39;s citation as a .ENW file" class="gtm-export-citation" data-gtmlabel="ENW">
+                    <span class="citations__extension gtm-export-citation" data-gtmlabel="ENW">
+                        <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#0176C3"/></svg>
+                        .ENW
+                    </span>
+                    <span class="citations__types">
+                            <span>
+                                EndNote
+                            </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="//citation-needed.springer.com/v2/references/10.1007/978-3-662-48000-7_29?format&#x3D;bibtex&amp;flavour&#x3D;citation"
+                   title="Download this paper&#39;s citation as a .BIB file" class="gtm-export-citation" data-gtmlabel="BIB">
+                    <span class="citations__extension gtm-export-citation" data-gtmlabel="BIB">
+                        <svg class="u-vertical-align-absolute" width="12" height="14" viewBox="0 0 12 14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7.269v-6.271c0-.551-.448-.998-1-.998-.556 0-1 .447-1 .998v6.271l-1.5-1.547c-.375-.387-1.01-.397-1.401-.006l.016-.016c-.397.397-.391 1.025-.001 1.416l3.178 3.178c.392.392 1.024.391 1.415 0l3.178-3.178c.392-.392.391-1.025-.001-1.416l.016.016c-.397-.397-1.018-.388-1.401.006l-1.5 1.547zm-7 5.731c0-.552.456-1 1.002-1h9.995c.554 0 1.002.444 1.002 1 0 .552-.456 1-1.002 1h-9.995c-.554 0-1.002-.444-1.002-1z" fill="#0176C3"/></svg>
+                        .BIB
+                    </span>
+                    <span class="citations__types">
+                            <span>
+                                BibTeX
+                            </span>
+                            <span>
+                                JabRef
+                            </span>
+                            <span>
+                                Mendeley
+                            </span>
+                    </span>
+                </a>
+            </li>
+    </ul>
+</div>
+                                        <div class="share-this u-showTwoCol" data-component="SV.Dropdown" data-namespace="shareThis">
+    <h3 class="u-h4" data-role="button-dropdown__title">
+        Share paper
+    </h3>
+    <ul class="share-this__content" data-role="button-dropdown__content">
+        <li>
+            <a class="test-shareby-email-link gtm-shareby-email-link" href="mailto:?to&#x3D;&amp;subject&#x3D;Read%20this%20paper%20on%20SpringerLink&amp;body&#x3D;Proofs%20of%20Space%0A%0Ahttps%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-662-48000-7_29" title="Share this paper via email">
+                <span class="share-this__types">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path fill-opacity="0" fill="#fff" d="M0 0h24v24h-24z"/><g transform="translate(3 5)"><rect fill="#F9F9F9" width="18" height="14" rx="2"/><path d="M1 2.006v9.988c0 .557.446 1.006.995 1.006h14.01c.549 0 .995-.449.995-1.006v-9.988c0-.557-.446-1.006-.995-1.006h-14.01c-.549 0-.995.449-.995 1.006zm-1 0c0-1.108.893-2.006 1.995-2.006h14.01c1.102 0 1.995.897 1.995 2.006v9.988c0 1.108-.893 2.006-1.995 2.006h-14.01c-1.102 0-1.995-.897-1.995-2.006v-9.988zM9 9l7-4v-1.443l-7 4-7-4v1.443z" fill="#666"/></g></g></svg>
+                    <span>Email</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="test-shareby-facebook-link gtm-shareby-facebook-link" href="https://www.facebook.com/sharer/sharer.php?u&#x3D;https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-662-48000-7_29" target="_blank" rel="noopener noreferrer" title="Share this paper via Facebook">
+                <span class="share-this__types">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path fill-opacity="0" fill="#fff" d="M0 0h24v24h-24z"/><path d="M12.717 19.091h-2.66v-6.274h-1.329v-2.162h1.329v-1.298c0-1.763.75-2.813 2.883-2.813h1.775v2.162h-1.11c-.83 0-.885.302-.885.866l-.004 1.082h2.011l-.235 2.162h-1.775v6.274z" fill="#666"/></g></svg>
+                    <span>Facebook</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="test-shareby-twitter-link gtm-shareby-twitter-link" href="https://twitter.com/intent/tweet?text&#x3D;I%27m%20reading%20this%20on%20%23springerlink&amp;url&#x3D;https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-662-48000-7_29" target="_blank" rel="noopener noreferrer" title="Share this paper via Twitter">
+                <span class="share-this__types">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path fill-opacity="0" fill="#fff" d="M0 0h24v24h-24z"/><path d="M16.651 9.189c.485-.306.858-.792 1.033-1.371-.454.284-.957.49-1.493.601-.428-.482-1.039-.783-1.715-.783-1.298 0-2.349 1.11-2.349 2.478 0 .194.019.384.06.564-1.952-.104-3.684-1.089-4.843-2.59-.202.367-.318.793-.318 1.247 0 .859.415 1.618 1.045 2.063-.385-.013-.748-.126-1.065-.31v.03c0 1.201.809 2.203 1.886 2.43-.198.058-.405.087-.62.087-.151 0-.299-.015-.442-.044.299.984 1.166 1.702 2.195 1.721-.805.665-1.818 1.061-2.919 1.061-.19 0-.377-.011-.561-.034 1.04.703 2.275 1.113 3.602 1.113 4.323 0 6.686-3.777 6.686-7.052l-.006-.321c.459-.35.859-.786 1.173-1.283-.422.197-.875.33-1.349.39z" fill="#666"/></g></svg>
+                    <span>Twitter</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="test-shareby-linkedin-link gtm-shareby-linkedin-link" href="https://www.linkedin.com/shareArticle?mini&#x3D;true&amp;url&#x3D;https%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-662-48000-7_29&amp;title&#x3D;Proofs of Space&amp;summary&#x3D;Proofs of work (PoW) have been suggested by Dwork and Naor (Crypto’92) as protection to a shared resource. The basic idea is to ask the service requestor to dedicate some non-trivial amount of computational work to every request. The original applic…" target="_blank" rel="noopener noreferrer" title="Share this paper via LinkedIn">
+                <span class="share-this__types">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path fill-opacity="0" fill="#fff" d="M0 0h24v24h-24z"/><path d="M6.821 10.044h2.126v7.41h-2.126v-7.41zm1.009-.927h-.015c-.77 0-1.269-.566-1.269-1.284 0-.732.514-1.287 1.299-1.287.784 0 1.267.554 1.282 1.285 0 .717-.498 1.286-1.297 1.286zm9.625 8.338h-2.411v-3.835c0-1.004-.377-1.688-1.206-1.688-.634 0-.987.462-1.151.908-.062.159-.052.382-.052.606v4.01h-2.389s.031-6.794 0-7.411h2.389v1.163c.141-.509.904-1.234 2.122-1.234 1.511 0 2.698 1.067 2.698 3.361v4.121z" fill="#666"/></g></svg>
+                    <span>LinkedIn</span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+                                    </div>
+                                    
+
+                                </div>
+                                        <div class="skyscraper-ad u-hide" data-component="SpringerLink.GoogleAds"></div>
+
+                            </div>
+                        </aside>
+                    </div>
+                </article>
+            </main>
+
+            <section class="banner banner--cookies-policy u-js-hide" data-component="SpringerLink.CookiePolicy">
+    <div class="banner__content u-interface">
+        <h2 class="u-screenreader-only">Cookies</h2>
+        <span class="banner__cookie-text">We use cookies to improve your experience with our site.</span>
+        <a class="banner__link banner__link--cookie" href="/termsandconditions#cookies">More information</a>
+
+        <form class="banner__form" action="/acceptcookies" method="POST">
+            <button class="u-link-like banner__right-ui">Accept</button>
+        </form>
+    </div>
+</section>
+
+                <footer class="footer u-interface">
+        <div class="footer__aside-wrapper">
+            <div class="footer__content">
+                <div class="footer__aside">
+    <p class="footer__strapline">Over 10 million scientific documents at your fingertips</p>
+                <div class="footer__edition" data-component="SpringerLink.EditionSwitcher">
+                    <h3 class="u-hide" data-role="button-dropdown__title" data-btn-text="Switch between Academic &#38; Corporate Edition">Switch Edition</h3>
+                    <ul data-role="button-dropdown__content">
+                        <li class="selected"><a href="/siteEdition/link" id="siteedition-academic-link">Academic Edition</a></li>
+                        <li><a href="/siteEdition/rd" id="siteedition-corporate-link">Corporate Edition</a></li>
+                    </ul>
+                </div>
+</div>
+            </div>
+        </div>
+        <div class="footer__content">
+            <ul class="footer__nav">
+    <li>
+        <a href="/">Home</a>
+    </li>
+    <li>
+        <a href="/impressum">Impressum</a>
+    </li>
+    <li>
+        <a href="/termsandconditions">Legal Information</a>
+    </li>
+    <li>
+        <a href="/accessibility" class="gtm-footer-accessibility">Accessibility</a>
+    </li>
+    <li>
+        <a id="contactus-footer-link" href="/contactus">Contact Us</a>
+    </li>
+</ul>
+            <a class="parent-logo"
+   target="_blank" rel="noreferrer noopener"
+   href="//www.springernature.com"
+   title="Go to Springer Nature">
+    <span class="u-screenreader-only">Springer Nature</span>
+    <svg width="125" height="12">
+        <image width="125" height="12" alt="Springer Nature logo"
+               src="/springerlink-static/1231500462/images/png/springernature.png"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               xlink:href="/springerlink-static/1231500462/images/svg/springernature.svg">
+        </image>
+    </svg>
+</a>
+
+<p class="footer__copyright">&copy; 2017 Springer International Publishing AG. Part of <a target="_blank" rel="noreferrer noopener" href="//www.springernature.com">Springer Nature</a>.</p>
+
+    <p class="footer__user-access-info">
+        <span>Not logged in</span>
+        <span>Universidade de Lisboa Fac. Letras - Biblioteca (2000444668) - Instituto Superior Técnico IST (3000652191) - B-on Consortium Portugal (3991329481)</span>
+        <span>193.136.135.24</span>
+    </p>
+
+        </div>
+    </footer>
+
+        </div>
+            <script type="text/javascript">
+        (function() {
+            var linkEl = document.querySelector('.js-ctm');
+            if (window.matchMedia && window.matchMedia(linkEl.media)) {
+                var scriptMathJax = document.createElement('script');
+                scriptMathJax.async = true;
+                scriptMathJax.src = '/springerlink-static/1231500462/js/mathJax.js';
+                var s0 = document.getElementsByTagName('script')[0];
+                s0.parentNode.insertBefore(scriptMathJax, s0);
+            }
+        })();
+    </script>
+
+<script type="text/javascript">
+    (function() {
+        var linkEl = document.querySelector('.js-ctm');
+        if (window.matchMedia && window.matchMedia(linkEl.media)) {
+            (function(h){h.className = h.className.replace('no-js', 'js')})(document.documentElement);
+            window.SpringerLink = window.SpringerLink || {};
+            window.SpringerLink.staticLocation = '/springerlink-static/1231500462';
+            var scriptJquery = document.createElement('script');
+            var scriptMain = document.createElement('script');
+            scriptJquery.async = false;
+            scriptJquery.src = window.SpringerLink.staticLocation + '/js/jquery-3.1.1.min.js';
+            scriptMain.async = false;
+            scriptMain.src =  window.SpringerLink.staticLocation + '/js/main.js';
+            document.body.appendChild(scriptJquery);
+            document.body.appendChild(scriptMain);
+        }
+    })();
+</script>
+
+
+<script class="kxct" data-id="KDqyaFZ_" data-timing="async" data-version="3.0" type="text/javascript">
+ window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+ (function(){
+   var k=document.createElement('script');k.type='text/javascript';k.async=true;
+   k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/KDqyaFZ_.js';
+   var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+ }());
+</script>
+
+<script>
+    window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+    (function(){
+        function retrieve(n){
+            var m, k='kx'+n;
+            if (window.localStorage) {
+                return window.localStorage[k] || "";
+            } else if (navigator.cookieEnabled) {
+                m = document.cookie.match(k+'=([^;]*)');
+                return (m && unescape(m[1])) || "";
+            } else {
+                return '';
+            }
+        }
+        Krux.user = retrieve('user');
+        Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+    })();
+</script>
+
+    <script type="text/javascript">
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function() {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+    </script>
+    <script type="text/javascript" id="googletag-push">
+        googletag.cmd.push(function() {
+                googletag.defineSlot('6313/casper/journal/article', [728, 90], 'doubleclick-leaderboard-ad').addService(googletag.pubads());
+                googletag.defineSlot('6313/casper/journal/article', [160, 600], 'doubleclick-ad').addService(googletag.pubads());
+                googletag.pubads().setTargeting("doi","10.1007-978-3-662-48000-7_29");
+                googletag.pubads().setTargeting("pmc",["SCI","SCI15033","SCI14050","SCI16021","SCI17028"]);
+                googletag.pubads().setTargeting("BPID",["2000444668","3000652191","3991329481"]);
+                googletag.pubads().setTargeting("eissn","978-3-662-48000-7");
+                googletag.pubads().setTargeting("pissn","978-3-662-47999-5");
+                googletag.pubads().setTargeting("ksg",Krux.segments);
+                googletag.pubads().setTargeting("kuid",Krux.uid);
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().enableAsyncRendering();
+            googletag.enableServices();
+        });
+    </script>
+
+        
+        <span id="chat-widget" class="u-hide"></span>
+    </body>
+</html>
