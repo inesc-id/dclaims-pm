@@ -1,7 +1,0 @@
-#!/bin/bash
-# Ask the user for their name
-echo Commit name?
-read varname
-git add -A
-git commit -m $varname
-git push
