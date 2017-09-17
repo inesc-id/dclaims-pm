@@ -40,8 +40,8 @@
          "type":"ECDSA(secp256k1)",
          "signer":"http://www.blockcerts.org/mockissuer/keys/got_public_key.asc",
          "ipfs_files":{
-            "rules":"12344567",
-            "proofs":"78889"
+            "rules":"QmTcr8MMP6XQYDigMYY6YnemGHTMtETZ8FXvgNsCLVF3ht",
+            "proofs":"QmSMppxttp5ioaZwmSWCWHnwMGUasmQRtcE3TdtMy2vAJG"
          }
       }
    },
