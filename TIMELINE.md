@@ -5,15 +5,23 @@
 #### Week - Sep 11
 
 - [ ] Create _Wizard of Oz Prototype_ that:
-  - [ ] Exposes s RESTful API with .publishCert, .verifyCert and .revokeCert
-  - [ ] A simple webpage that uses this service
+  - [ ] Exposes s RESTful API with
+    - [x] .publishCert
+    - [ ] .verifyCert 
+    - [ ] .revokeCert
+  - [x] A simple webpage that uses this service
   - Notes: Use an in memory database. Follow the Blockcerts format
-- [ ] Record a demo of this Demo
+- [x] Record a demo of this Demo
 
 #### Week - Sep 18
 
-- [ ] Use IPFS to store the Cert
+This week's focus is to get the first integration between hypercerts-daemon, IPFS and blockcerts
+
+- [ ] Use IPFS to store an example Cert that has already been published through blockcerts
+- [ ] .verifyCert by Hash or by JSON of Certs available in the Chain.
 - [ ] Show a demo of publishing cert in one machine and verifying in the other (then revoke and verify again)
+- [ ] Complete remaining Core Nodeschool courses.
+- [ ] Start Survey Research about the ideal Verifiable Claims System
 
 #### Week - Sep 25
 
@@ -21,9 +29,14 @@
 
 #### Week - Oct 02
 #### Week - Oct 09
+
+- [ ] End Survey Research about the ideal Verifiable Claims System
+
 #### Week - Oct 16
 #### Week - Oct 23
 #### Week - Oct 30
+
+- [ ] First draft of the paper of the ideal Verifiable Claims System Survey
 
 ## Nov
 
