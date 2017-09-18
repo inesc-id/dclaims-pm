@@ -21,6 +21,7 @@ This week's focus is to get the first integration between hypercerts-daemon, IPF
 - [ ] .verifyCert by Hash or by JSON of Certs available in the Chain.
 - [ ] Show a demo of publishing cert in one machine and verifying in the other (then revoke and verify again)
 - [ ] Complete remaining Core Nodeschool courses.
+- [ ] Start Survey Research about the ideal Verifiable Claims System
 
 #### Week - Sep 25
 
@@ -28,9 +29,14 @@ This week's focus is to get the first integration between hypercerts-daemon, IPF
 
 #### Week - Oct 02
 #### Week - Oct 09
+
+- [ ] End Survey Research about the ideal Verifiable Claims System
+
 #### Week - Oct 16
 #### Week - Oct 23
 #### Week - Oct 30
+
+- [ ] First draft of the paper of the ideal Verifiable Claims System Survey
 
 ## Nov
 
