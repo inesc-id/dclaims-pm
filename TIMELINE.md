@@ -29,10 +29,10 @@ This week's focus is to get the first integration between hypercerts-daemon, IPF
 
 #### Week - Oct 02
 #### Week - Oct 09
+#### Week - Oct 16
 
 - [ ] End Survey Research about the ideal Verifiable Claims System
 
-#### Week - Oct 16
 #### Week - Oct 23
 #### Week - Oct 30
 
