@@ -10,8 +10,10 @@
   "license": "MIT",
   "dependencies": {
     "async": "^2.5.0",
+    "bl": "^1.2.1",
     "body-parser": "^1.18.1",
     "cors": "^2.8.4",
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "ipfs-api": "^14.3.5"
   }
 }
