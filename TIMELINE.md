@@ -28,6 +28,9 @@ This week's focus is to get the first integration between hypercerts-daemon, IPF
 ## Oct
 
 #### Week - Oct 02
+
+- [RWOT Conference](https://www.eventbrite.com/e/rebootingweboftrust-design-workshop-v-fall-2017-in-boston-area-usa-tickets-34984665075)
+
 #### Week - Oct 09
 #### Week - Oct 16
 
