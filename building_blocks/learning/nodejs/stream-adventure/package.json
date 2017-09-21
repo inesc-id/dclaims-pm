@@ -1,0 +1,19 @@
+{
+  "name": "stream-adventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "program_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concat-stream": "^1.6.0",
+    "reverse-string": "0.0.6",
+    "split": "^1.0.1",
+    "stream": "0.0.2",
+    "through2": "^2.0.3",
+    "trumpet": "^1.7.2"
+  }
+}

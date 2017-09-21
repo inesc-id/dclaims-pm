@@ -1,4 +1,6 @@
 var fs = require("fs");
+var ipfsAPI = require('ipfs-api')
+var bl = require('bl')
 var json = JSON.parse(fs.readFileSync('files/sample_cert.json', 'utf8'));
 
 var cert_rules = JSON.parse(fs.readFileSync('files/cert_test_rules_ipfs.json', 'utf8'));
@@ -7,6 +9,7 @@ var revocationStatus = true;
 
 var mock_proofs_ipfs_file_link = "QmSMppxttp5ioaZwmSWCWHnwMGUasmQRtcE3TdtMy2vAJG";
 var mock_rules_ipfs_file_link = "QmTcr8MMP6XQYDigMYY6YnemGHTMtETZ8FXvgNsCLVF3ht";
+var ipfs = ipfsAPI('localhost', '5001', {protocol: 'http'})
 
 function verifySignatures(cert_rules, cert_proofs){
 
@@ -18,12 +21,23 @@ function verifySignatures(cert_rules, cert_proofs){
     });
     return revocationStatus;
 }
-
+//QmTcr8MMP6XQYDigMYY6YnemGHTMtETZ8FXvgNsCLVF3ht
 function mockGetProofsFile(ipfs_proofs_link){return cert_proofs}
 
 function mockGetRulesFile(ipfs_rules_link){return cert_rules}
 
 var appRouter = function(app) {
+
+    app.get('/test', function(req,res){
+      if (req.method == 'GET'){
+          var ipfs_addr= req.query.ipfsAddr
+        console.log(ipfs_addr)
+        ipfs.files.cat(ipfs_addr,function (err,file) {
+          file.pipe(res);
+        })
+      }else
+        res.end('ciao')
+    })
 
     app.post('/', function(request, response){
         try{
