@@ -2,9 +2,14 @@
 <body>
 
 
+<p>Send a full JSON</p>
 
 <input id="jsonid" type="text" name="json_input"><br>
 <input name="buttonExecute" onclick="sendMessage(document.getElementById('jsonid').value)" type="button" value="Execute" />
+
+<p> Send the IPFS Link to the cert</p>
+<input id="jsonid2" type="text" name="json_input2"><br></st>
+<input name="buttonExecute" onclick="sendGetMessage(document.getElementById('jsonid2').value)" type="button" value="Execute" />
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/JavaScript">
@@ -24,6 +29,26 @@
         xhr.open("POST", "http://146.193.41.153:8090/");
         xhr.setRequestHeader("content-type", "application/json");
         xhr.send(data);
+    }
+
+    function sendGetMessage(name){
+      var data = null;
+
+      var xhr = new XMLHttpRequest();
+      xhr.withCredentials = false;
+
+      xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === 4) {
+          console.log(this.responseText);
+        }
+      });
+//application/javascript
+      xhr.open("GET", "http://146.193.41.153:8091/promise?ipfsAddr="+name);
+      xhr.setRequestHeader("content-type", "application/javascript");
+
+      //xhr.setRequestHeader("postman-token", "9478c587-f2da-2c03-fe1a-5747306ae18f");
+
+      xhr.send(data);
     }
 
 </script>
