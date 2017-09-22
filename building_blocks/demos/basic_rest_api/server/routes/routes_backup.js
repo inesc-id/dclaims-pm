@@ -1,7 +1,6 @@
 var fs = require("fs");
 var ipfsAPI = require('ipfs-api')
 var bl = require('bl')
-var Promise = require('promise')
 var json = JSON.parse(fs.readFileSync('files/sample_cert.json', 'utf8'));
 
 var cert_rules = JSON.parse(fs.readFileSync('files/cert_test_rules_ipfs.json', 'utf8'));
@@ -29,49 +28,7 @@ function mockGetProofsFile(ipfs_proofs_link){return cert_proofs}
 
 function mockGetRulesFile(ipfs_rules_link){return cert_rules}
 
-
-function getRulesProofs(cert_raw){
-  var cert = JSON.parse(cert_raw.toString())
-  var rules_link = JSON.stringify(cert['document']['verify']['ipfs_files']['rules'])
-  var proofs_link = JSON.stringify(cert['document']['verify']['ipfs_files']['proofs'])
-
-  var rules_promise = getIPFSCert(rules_link)
-  var proofs_promise = getIPFSCert(proofs_link)
-
-  return new Promise.all(rules_promise,proofs_promise)
-
-}
-
-function getIPFSCert(multihash){
-  var promise = new Promise(function(fulfill,reject){
-    ipfs.files.cat(multihash,function (err,file) {
-      console.log("Fetching... "+multihash)
-      file.pipe(bl(function(err,data){
-
-        //var cert = JSON.parse(data.toString())
-        //console.log(cert['document']['verify']['ipfs_files'])
-        fulfill(data.toString())
-
-      }));
-    })
-  })
-  return promise
-}
-
 var appRouter = function(app) {
-
-  app.get('/promise',function(req,res){
-    if (req.method == 'GET'){
-      var ipfs_addr= req.query.ipfsAddr
-      getIPFSCert(ipfs_addr).then(function(cert_raw){
-
-        getRulesProofs(cert_raw).then(console.log)
-
-        res.end(JSON.stringify(cert_raw))
-        console.log("Sent...")
-      })
-    }
-  })
 
   // /getcert?ipfsAddr=$multihash
   app.get('/getcert', function(req,res){
