@@ -14,6 +14,22 @@ var ipfs = ipfsAPI('localhost', '5001', {protocol: 'http'})
 
 //sample cert: QmdWaUeoKCbMRTndAWAqXw52tBUPogGvkrWtoVwdRpYDAB
 
+function promiseVerifySignatures(files_array){
+  var cert_rules = JSON.parse(files_array[0])
+  var cert_proofs = JSON.parse(files_array[1])
+
+  return new Promise(function(fulfill,reject){
+    cert_rules["revocation_rules"].forEach(function(element){
+      //console.log(element);
+      if(! cert_proofs["proofs"].includes(element)){
+        revocationStatus = false;
+      }
+    })
+    fulfill(revocationStatus)
+  })
+
+}
+
 function verifySignatures(cert_rules, cert_proofs){
 
   cert_rules["revocation_rules"].forEach(function(element){
@@ -32,21 +48,22 @@ function mockGetRulesFile(ipfs_rules_link){return cert_rules}
 
 function getRulesProofs(cert_raw){
   var cert = JSON.parse(cert_raw.toString())
-  var rules_link = JSON.stringify(cert['document']['verify']['ipfs_files']['rules'])
-  var proofs_link = JSON.stringify(cert['document']['verify']['ipfs_files']['proofs'])
+  var rules_link = cert['document']['verify']['ipfs_files']['rules']
+  var proofs_link = cert['document']['verify']['ipfs_files']['proofs']
 
   var rules_promise = getIPFSCert(rules_link)
   var proofs_promise = getIPFSCert(proofs_link)
 
-  return new Promise.all(rules_promise,proofs_promise)
+  return new Promise.all([rules_promise,proofs_promise])
 
 }
 
 function getIPFSCert(multihash){
-  var promise = new Promise(function(fulfill,reject){
+  return new Promise(function(fulfill,reject){
     ipfs.files.cat(multihash,function (err,file) {
       console.log("Fetching... "+multihash)
       file.pipe(bl(function(err,data){
+
 
         //var cert = JSON.parse(data.toString())
         //console.log(cert['document']['verify']['ipfs_files'])
@@ -55,7 +72,7 @@ function getIPFSCert(multihash){
       }));
     })
   })
-  return promise
+
 }
 
 var appRouter = function(app) {
@@ -63,13 +80,13 @@ var appRouter = function(app) {
   app.get('/promise',function(req,res){
     if (req.method == 'GET'){
       var ipfs_addr= req.query.ipfsAddr
-      getIPFSCert(ipfs_addr).then(function(cert_raw){
-
-        getRulesProofs(cert_raw).then(console.log)
-
-        res.end(JSON.stringify(cert_raw))
-        console.log("Sent...")
-      })
+      getIPFSCert(ipfs_addr)
+        .then(getRulesProofs)
+        .then(promiseVerifySignatures)
+        .then(function(result){
+          console.log(result.toString())
+          res.end(result.toString())
+        })
     }
   })
 
