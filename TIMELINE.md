@@ -17,10 +17,11 @@
 
 This week's focus is to get the first integration between hypercerts-daemon, IPFS and blockcerts
 
-- [ ] Use IPFS to store an example Cert that has already been published through blockcerts
-- [ ] .verifyCert by Hash or by JSON of Certs available in the Chain.
+- [x] Use IPFS to store an example Cert that has already been published through blockcerts
+- [x] .verifyCert by Hash or by JSON of Certs available in the Chain.
 - [ ] Show a demo of publishing cert in one machine and verifying in the other (then revoke and verify again)
-- [ ] Complete remaining Core Nodeschool courses.
+- [x] Complete (relevant) remaining Core Nodeschool courses.
+- [x] Complete Promises Nodeschool course
 - [ ] Start Survey Research about the ideal Verifiable Claims System
 
 #### Week - Sep 25
