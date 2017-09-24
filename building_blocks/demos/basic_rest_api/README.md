@@ -13,7 +13,7 @@
 **Client**
 1. In `client/playground/index.html`, configure the correct server address and port in line `var serverAddress = "http://146.193.41.153:8091"`
 1. The client can run in any browser. Navigate to `client/playground/` and run `sh start.sh`
-2. Go to [http://localhost:8084] to test.
+2. Go to [http://localhost:8084](http://localhost:8084) to test.
 ### Revoke a Certificate
 Revocation via a web application is **not** implemented as of yet. One can, however, simulate it when in control of the server.
 
