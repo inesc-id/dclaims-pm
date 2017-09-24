@@ -80,6 +80,27 @@ function getIPFSCert(multihash){
 
 var appRouter = function(app) {
 
+  app.get('/verifycert',function(req,res){
+    if (req.method == 'GET'){
+      var cert= req.query.ipfsAddr
+        getMockEthereum(cert)
+        .then(getRulesProofs)
+        .then(promiseVerifySignatures)
+        .then(function(result){
+          if (result){
+            console.log("trueeee")
+            res.end("The certificate is REVOKED")
+          }
+          if (!result){
+            res.end("The certificate is NOT REVOKED")
+          }
+        }).then(null,function(err){
+        console.log(err.message)
+        res.end("Something went wrong...")
+      })
+    }
+  })
+
   app.get('/verify',function(req,res){
     if (req.method == 'GET'){
       var ipfs_addr= req.query.ipfsAddr
@@ -95,7 +116,10 @@ var appRouter = function(app) {
           if (!result){
             res.end("The certificate is NOT REVOKED")
           }
-        })
+        }).then(null,function(err){
+          console.log(err.message)
+          res.end("Something went wrong...")
+      })
     }
   })
 }
