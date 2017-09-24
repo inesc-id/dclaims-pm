@@ -121,6 +121,7 @@
 
       function sendGetMessage(name){
         var data = null;
+        var serverAddress = "http://146.193.41.153:8091"
 
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = false;
@@ -131,7 +132,7 @@
           }
         });
 //application/javascript
-        xhr.open("GET", "http://146.193.41.153:8091/promise?ipfsAddr="+name);
+        xhr.open("GET", serverAddress+"/promise?ipfsAddr="+name);
         xhr.setRequestHeader("content-type", "application/javascript");
 
         //xhr.setRequestHeader("postman-token", "9478c587-f2da-2c03-fe1a-5747306ae18f");
