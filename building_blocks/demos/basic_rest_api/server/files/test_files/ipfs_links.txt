@@ -1,0 +1,2 @@
+"revoked": "QmSATsagbfxgvTPykdsMbs9STDpivs6v3nu37RnF5RkyZA"
+"non-revoked":"QmWG7Zf6Z7cbyEjjX3GQnWoufYWSYigXxcQKtBBCAcjb82"

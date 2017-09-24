@@ -121,8 +121,15 @@ var appRouter = function(app) {
         .then(getRulesProofs)
         .then(promiseVerifySignatures)
         .then(function(result){
-          console.log(result.toString())
-          res.end(result.toString())
+          if (result){
+            console.log("trueeee")
+            res.end("The certificate is REVOKED")
+          }
+          if (!result){
+            res.end("The certificate is NOT REVOKED")
+          }
+
+
         })
     }
   })

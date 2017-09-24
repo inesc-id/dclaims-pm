@@ -1,6 +1,10 @@
-<html>
-<body>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Hypercerts Playground</title>
+</head>
+<body style="padding: 20px; font-family:Arial">
 
 <p>Send a full JSON</p>
 
@@ -39,7 +43,7 @@
 
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-          console.log(this.responseText);
+          alert(this.responseText);
         }
       });
 //application/javascript
