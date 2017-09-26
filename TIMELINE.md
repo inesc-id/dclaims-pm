@@ -19,12 +19,20 @@ This week's focus is to get the first integration between hypercerts-daemon, IPF
 
 - [x] Use IPFS to store an example Cert that has already been published through blockcerts
 - [x] .verifyCert by Hash or by JSON of Certs available in the Chain.
-- [ ] Show a demo of publishing cert in one machine and verifying in the other (then revoke and verify again)
+- [x] Show a demo of publishing cert in one machine and verifying in the other (then revoke and verify again)
 - [x] Complete (relevant) remaining Core Nodeschool courses.
 - [x] Complete Promises Nodeschool course
-- [ ] Start Survey Research about the ideal Verifiable Claims System
+- [ ] ~~Start Survey Research about the ideal Verifiable Claims System~~ Moved to next week.
 
 #### Week - Sep 25
+The week's focus is to implement a client based certificate revocation mechanism. The current version requires manual handling of files in order to revoke a certificate. That is to be changed. So, continuing with the Ethereum SC being mocked by a local file, accomplish the following:
+- [ ] Create method for Client to append/retract proofs to the proofs file and add that file to IPFS
+- [ ] Create method allow the client to alter the ethereum mock file, by updating it with the new proofs file.
+- [ ] Configure the Turbina server to run both IPFS daemon and Nodejs app as a service permanentely (for system testing with several clients)
+- [ ] Improve documentation on how to deploy the application (instalation guide, basically)
+- [ ] Update the RWOT whitepaper to be in accordance with the application.
+- [ ] Create github issue to foment discussion on how certain revocation details should be handled.
+- [ ] _from last week_ Start Survey Research about the ideal Verifiable Claims System
 
 ## Oct
 
