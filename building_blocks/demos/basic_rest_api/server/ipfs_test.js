@@ -1,20 +1,28 @@
 'use strict'
 
+var Promise = require('promise')
 const series = require('async/series')
-const IPFS = require('ipfs')
+var ipfsAPI = require('ipfs-api')
+var fs = require('fs')
+var bl = require('bl')
+var ipfs = ipfsAPI('localhost', '5001', {protocol: 'http'})
 
 
-const node = new IPFS()
+const files = [
+  {
+    path: 'test.txt',
+    content: fs.createReadStream('test.txt')
+}
+]
 
-node.on('ready', () => {
-    // Your node is now ready to use \o/
-    node.files.cat("QmWAyP98UjeCTSrU8eNx36qGZacZPPA7tEEodDuSDkR2fB", function (err, file) {
-    console.log("uoouo");
-    // file will be a stream containing the data of the file requested
+ipfs.files.add(files, function (err, files) {
+  // 'files' will be an array of objects
+  console.log(files)
 })
 
-    // stopping a node
-    node.stop(() => {
-    // node is now 'offline'
-})
-})
+
+//stream.pipe(process.stdout)
+
+
+
+
