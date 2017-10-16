@@ -48,12 +48,14 @@ The week's focus is to implement a client based certificate revocation mechanism
 #### Week - Oct 23
 #### Week - Oct 30
 
-- [ ] First draft of the paper of the ideal Verifiable Claims System Survey
+- [ ] ~~First draft of the paper of the ideal Verifiable Claims System Survey~~
+- [ ] Complete RWOTs' Certificate Revocation whitepaper
 
 ## Nov
 
 #### Week - Nov 06
 #### Week - Nov 13
+- [ ] Complete Certificate Revocation Implementation
 #### Week - Nov 20
 #### Week - Nov 27
 
@@ -82,6 +84,7 @@ The week's focus is to implement a client based certificate revocation mechanism
 ## Feb
 
 #### Week - Fev 05
+- USENIX ATC Submission Deadline. [more info](https://www.usenix.org/conference/atc17/call-for-papers)
 #### Week - Fev 12
 #### Week - Fev 19
 #### Week - Fev 26
