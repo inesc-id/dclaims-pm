@@ -43,21 +43,32 @@ The week's focus is to implement a client based certificate revocation mechanism
 #### Week - Oct 09
 #### Week - Oct 16
 
-- [ ] End Survey Research about the ideal Verifiable Claims System
+- [ ] ~~End Survey Research about the ideal Verifiable Claims System~~
+- [ ] Study VC specification and understand how revocation can be implemented.
+- [ ] **Clickbait:** Search for good news articles to test the system against, currently the news topic to research is Bitcoin block size.
+- [ ] **Blockcerts:** Write an abstract explaining the revocation problems and outlining the architecture. I can reference that it'll be about revoking VC, and Blockcerts are moving towards that format (compatible)
+    - Remove the current readme.md
+    - Work on new illustrations
 
 #### Week - Oct 23
+- [ ] **Blockcerts:** Publish abstrat on BCs forum and link to the github
+- [ ] Continue work on the Revocation whitepaper structure
 #### Week - Oct 30
-
 - [ ] ~~First draft of the paper of the ideal Verifiable Claims System Survey~~
-- [ ] Complete RWOTs' Certificate Revocation whitepaper
+- [ ] Establish specific goals for the whitepaper to be completed by the end of november
+    - Establish goals for implementation
+
 
 ## Nov
 
 #### Week - Nov 06
+- [ ] Complete RWOTs' Certificate Revocation whitepaper
+
 #### Week - Nov 13
-- [ ] Complete Certificate Revocation Implementation
+  Offline week for Joao
 #### Week - Nov 20
 #### Week - Nov 27
+- [ ] Complete Certificate Revocation Implementation
 
 ## Dec
 
