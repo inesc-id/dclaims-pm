@@ -124,6 +124,7 @@ The week's focus is to implement a client based certificate revocation mechanism
 
 
 #### Week - May 07
+- **11 May - Thesis Delivery Deadline**
 #### Week - May 14
 #### Week - May 21
 #### Week - May 28
