@@ -15,7 +15,7 @@ These two updates made clear that the link between the, let's call it Clickbait 
 ## Architecture (adapted for Clickbait Detection)
 The system's core functions are are`issue-veredict`, performed by a `Verifier` and `check-veredict`, performed by a `Reader`.
 
-![](https://user-images.githubusercontent.com/10178757/31737171-90c43148-b43e-11e7-9f38-32cf7c25b822.jpg)
+![](https://github.com/inesc-id/hypercerts-pm/raw/master/images/hypercerts-arch.jpg)
 
 ### `[Verifier(V)] issue-veredict(V, title, body, URL) => ack`
 
