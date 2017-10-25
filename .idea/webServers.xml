@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4436e841-8077-45ec-bd55-7322d2f30520" name="turbina" url="http://turbina.gsd.inesc-id.pt">
+        <fileTransfer host="turbina.gsd.inesc-id.pt" port="22" rootFolder="/home/joaosantos/" accessType="SFTP" password="dfcbdfd9dfdadfc3dfd8dfc3dfc4dfcbdf9bdf9fdfeb" username="joaosantos">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
