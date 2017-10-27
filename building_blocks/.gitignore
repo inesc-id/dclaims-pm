@@ -60,4 +60,6 @@ typings/
 
 .DS_Store
 
+.node-persist/
+
 
