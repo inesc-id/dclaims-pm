@@ -1,5 +1,5 @@
 document.getElementById('jsonid2').style.width="800px";
-var serverAddress = "http://146.193.41.153:8091"
+
 function sendMessage_old(name){
     var jsonfile = jQuery.parseJSON(name);
     var data = JSON.stringify(jsonfile);
@@ -31,7 +31,16 @@ function sendMessage(name){
         }
     });
 //application/javascript
-    xhr.open("GET", serverAddress+"/test?test_field="+name+"&second_field="+"blabla");
+    //http://146.193.41.153:8092/verify?claim=veryfake&article=jn_99
+    var claim = name
+    var article_url = window.location.href
+    var serverAddress = "http://turbina.gsd.inesc-id.pt:8092"
+
+    var request = serverAddress+"verify?claim="+claim+"&article="+article_url
+
+    console.log("REQUEST::::::     "+request)
+
+    xhr.open("GET", request);
     xhr.setRequestHeader("content-type", "application/javascript");
 
     //xhr.setRequestHeader("postman-token", "9478c587-f2da-2c03-fe1a-5747306ae18f");
