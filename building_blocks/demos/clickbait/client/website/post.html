@@ -226,6 +226,7 @@
         xhr.addEventListener("readystatechange", function () {
           if (this.readyState === 4) {
             alert(this.responseText);
+            console.log(this.response)
           }
         });
 //application/javascript

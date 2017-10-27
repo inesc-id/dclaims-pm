@@ -1,5 +1,5 @@
 var storage = require('node-persist')
-var ArrayList = require('arraylist')
+
 
 
 function addItem(key,item){
@@ -23,6 +23,7 @@ function getItem(key) {
 }
 
 function handleVerification(nkey,newClaim){
+    // CONVERT VC TO ARRAY!
     getItem(nkey).then(value=>{
         var newClaimsList
         if(value[1]){
@@ -61,6 +62,23 @@ function handleVerification2(nkey,newClaim){
 
 }
 
+
+
+storage.initSync()
+
+var a = storage.getItemSync("37")
+
+var b = new Array
+
+
+
+console.log(a)
+
+
+
+
+/*
+
 var array1 = new Array
 var newClaim = new Array
 
@@ -87,9 +105,9 @@ var nkey = "37"
 handleVerification2(nkey,vc).then(console.log)
 
 
-
-
 /*
+
+
 //addItem("2",array).then(console.log)
 getItem("2").then(function (value) {
     value.push("hello")
