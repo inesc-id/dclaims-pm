@@ -1,56 +1,47 @@
-var storage = require('node-persist');
-var arraylist = require('arraylist')
+var storage = require('node-persist')
 
 
-function getClaimsList(url){
+function addItem(key,item){
     return new Promise(function(fulfill,reject){
         storage.init().then(function(){
-            storage.getItem(url).then(function(article){
-                if(article) {
-                    fulfill(article)
-                }
-                else{
-                    fulfill(false)
-                }
+            storage.setItem(key,item).then(function(value){
+                fulfill([key,value])
             })
         })
     })
-
-
 }
 
-function appendToClaimsList(claimsList, newClaim, key){
+function getItem(key) {
     return new Promise(function(fulfill,reject){
-        claimsList.add(newClaim);
+        storage.init().then(function(){
+            storage.getItem(key).then(function(value){
+                fulfill([key,value])
+            })
+        })
+    })
+}
 
-        storage.init( ).then(function() {
-            storage.setItem(key,claimsList)
-                .then(function() {
-                    console.log("[sucess] added to existing list")
-                    fulfill("[sucess] added to existing list")
-                })
+function handleVerification(nkey,newClaim){
+    return new Promise(function(fulfill,reject){
+        getItem(nkey).then(value=>{
+            var newClaimsList
+            if(value[1]){
+            console.log("Appending...")
+            newClaimsList = value[1].concat(newClaim)
 
-        });
-
+        }else{
+            console.log("Creating new list")
+            newClaimsList = newClaim
+        }
+        return addItem(value[0],newClaimsList)
+    }).then(value=>{
+            console.log("Sucess \n"+value)
+        fulfill("Sucess :)")
+    })
     })
 
 }
 
-function createNewClaimsList(newClaim, key){
-    return new Promise(function(fulfill,reject){
-
-        storage.init( ).then(function() {
-            var list = new ArrayList()
-            list.add(vc)
-            console.log("cena "+list)
-            storage.setItem(key,list)
-                .then(function() {
-                    console.log("[success] created new list")
-                    fulfill("[success] created new list")
-                })
-        });
-    })
-}
 
 var appRouter = function(app) {
 
@@ -58,38 +49,17 @@ var appRouter = function(app) {
         var req_field = req.query.claim
         var req_url = req.query.article
         var req_ip = req.ip
-
-        var coolPromise = null
+        
 
         var vc = {claim:req_field,
                   url: req_url,
                   ip: req_ip}
 
-        getClaimsList(req_url).then(function(value){
-            if(value){
-                appendToClaimsList(value,vc,req_url)
-            }else{
-                console.log("not here... Adding...")
-                createNewClaimsList(vc,req_url)
-
-            }
-        }).then(function(value){
-            res.send("All good.")
+        
+        handleVerification(req_url,vc)
+            .then(value=>{
+            res.send(value)
         })
-
-       /* storage.init( ).then(function() {
-            //then start using it
-            storage.setItem(req_url,vc)
-                .then(function() {
-
-                    return storage.getItem(req_url)
-                })
-                .then(function(value) {
-
-                    console.log(value); // yourname
-                    res.send("Claim < "+req_field+" > From < "+req_ip+" >"+" in <"+req_url+" >")
-                })
-        });*/
 
 
 
