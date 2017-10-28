@@ -3,7 +3,7 @@ console.log("Helloooo")
 
 function clickClaims(){
     console.log("Opened claims")
-    document.getElementById("claim-post-body").innerHTML="hello"
+    document.getElementById("claim-post-body").innerHTML="There are no claims about this article's title yet. Open the article and be the first!"
 
     //http://146.193.41.153:8092/getclaims?article=http://turbina.gsd.inesc-id.pt:8095/post.html
 
