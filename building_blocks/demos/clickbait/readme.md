@@ -17,5 +17,4 @@ This demo is a proof of concept of the Clickbait Buster. It's goal is to allow u
 7. Run `sh start.sh` . This will run a python script that starts a webserver to run the website on port 8095
 
 #### Use it!
-
-(I'll publish a video showing how to use it)
+[![alt text](https://github.com/inesc-id/hypercerts-pm/blob/master/images/Screen%20Shot%202017-10-28%20at%2023.30.29.jpg)](https://youtu.be/vT1zELT0APc)
