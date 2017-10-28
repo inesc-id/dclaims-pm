@@ -5,7 +5,13 @@ function addItem(key,item){
     return new Promise(function(fulfill,reject){
         storage.init().then(function(){
             storage.setItem(key,item).then(function(value){
-                fulfill([key,value])
+                if(value){
+                    fulfill([key,value])    
+                }
+                else{
+                    fulfill(null)
+                }
+
             })
         })
     })
@@ -34,7 +40,7 @@ function handleVerification(nkey,newClaim){
 
         getItem(nkey).then(value=>{
             var newClaimsList
-            if(value[1]){
+            if(value){
             console.log("Appending...")
             newClaimsList = value[1].concat(newClaimArray)
 
@@ -42,13 +48,12 @@ function handleVerification(nkey,newClaim){
             console.log("Creating new list")
             newClaimsList = newClaimArray
         }
-        return addItem(value[0],newClaimsList)
+        return addItem(nkey,newClaimsList)
     }).then(value=>{
             console.log("Sucess \n"+value)
         fulfill("Sucess :)")
     })
     })
-
 }
 
 function getClaimsJSONByUrl(url){
@@ -67,6 +72,7 @@ function getClaimsCountsJSONByUrl(url){
         getItem(url).then(values=>{
             if(values){
                 fulfill(values[1].length)
+                //fulfill("3")
             }
             else{
                 fulfill("0")
@@ -84,6 +90,8 @@ var appRouter = function(app) {
 
         getClaimsJSONByUrl(req_url).then(value=>{
             res.end(JSON.stringify(value))
+        }).catch((err) => {
+            console.log(err)
         })
     })
 
