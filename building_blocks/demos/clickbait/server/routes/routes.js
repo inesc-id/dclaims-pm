@@ -66,7 +66,7 @@ function getClaimsCountsJSONByUrl(url){
     return new Promise(function(fulfill,reject){
         getItem(url).then(values=>{
             if(values){
-                fulfill(values.length)
+                fulfill(values[1].length)
             }
             else{
                 fulfill("0")

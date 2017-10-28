@@ -82,7 +82,9 @@ function getClaimsJSONByUrl(url){
 function getClaimsCountsJSONByUrl(url){
     return new Promise(function(fulfill,reject){
         getItem(url).then(values=>{
-            fulfill(values.length)
+            console.log(values[1].length)
+            fulfill("blabla")
+            //fulfill(values.length)
         })
     })
 }
@@ -93,6 +95,8 @@ var vc3 = {claim:"CC",
     ip: "CC"}
 
 
+
+getClaimsCountsJSONByUrl("http://turbina.gsd.inesc-id.pt:8095/post.html").then(console.log)
 
 /*
 getClaimsJSONByUrl("http://turbina.gsd.inesc-id.pt:8095/post.html").then(value=>{
