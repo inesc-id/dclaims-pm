@@ -194,27 +194,7 @@
     <script src="js/clean-blog.min.js"></script>
    <!-- <script src= "js/clickbait-api.js"></script> -->
 
-
-    <script>
-      document.getElementById('jsonid2').style.width="800px";
-
-      function sendMessage_old(name){
-        var jsonfile = jQuery.parseJSON(name);
-        var data = JSON.stringify(jsonfile);
-
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = false;
-
-        xhr.addEventListener("readystatechange", function () {
-          if (this.readyState === 4) {
-            alert(this.responseText);
-          }
-        });
-
-        xhr.open("GET", serverAddress+"/verifycert?ipfsAddr="+data);
-        xhr.setRequestHeader("content-type", "application/json");
-        xhr.send(data);
-      }
+    <script >
 
       function sendMessage(name){
         var data = null;
@@ -246,7 +226,6 @@
 
         xhr.send(data);
       }
-
 
     </script>
 

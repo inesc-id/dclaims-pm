@@ -22,17 +22,20 @@ function getItem(key) {
     })
 }
 
-function handleVerification(nkey,newClaim){
+function handleVerification_old(nkey,newClaim){
     // CONVERT VC TO ARRAY!
+    var newClaimArray = []
+    newClaimArray.push(newClaim)
+
     getItem(nkey).then(value=>{
         var newClaimsList
         if(value[1]){
         console.log("Appending...")
-        newClaimsList = value[1].concat(newClaim)
+        newClaimsList = value[1].concat(newClaimArray)
 
     }else{
         console.log("Creating new list")
-        newClaimsList = newClaim
+        newClaimsList = newClaimArray
     }
     return addItem(value[0],newClaimsList)
 }).then(value=>{
@@ -41,17 +44,20 @@ function handleVerification(nkey,newClaim){
 }
 
 
-function handleVerification2(nkey,newClaim){
+function handleVerification(nkey,newClaim){
     return new Promise(function(fulfill,reject){
+        var newClaimArray = []
+        newClaimArray.push(newClaim)
+
         getItem(nkey).then(value=>{
             var newClaimsList
             if(value[1]){
             console.log("Appending...")
-            newClaimsList = value[1].concat(newClaim)
+            newClaimsList = value[1].concat(newClaimArray)
 
         }else{
             console.log("Creating new list")
-            newClaimsList = newClaim
+            newClaimsList = newClaimArray
         }
         return addItem(value[0],newClaimsList)
     }).then(value=>{
@@ -62,19 +68,46 @@ function handleVerification2(nkey,newClaim){
 
 }
 
+function getClaimsJSONByUrl(url){
+    return new Promise(function(fulfill,reject){
+        getItem(url).then(value=>{
+            var claimsJSON = {}
+            claimsJSON.claimsList = value
+            fulfill(claimsJSON)
+
+        })
+    })
+}
+
+function getClaimsCountsJSONByUrl(url){
+    return new Promise(function(fulfill,reject){
+        getItem(url).then(values=>{
+            fulfill(values.length)
+        })
+    })
+}
 
 
-storage.initSync()
-
-var a = storage.getItemSync("37")
-
-var b = new Array
+var vc3 = {claim:"CC",
+    url: "CC",
+    ip: "CC"}
 
 
 
-console.log(a)
+/*
+getClaimsJSONByUrl("http://turbina.gsd.inesc-id.pt:8095/post.html").then(value=>{
 
+    cleanList = value["claimsList"][1]
+    console.log(cleanList.length)
 
+    for(let i=0;i<cleanList.length;i++){
+        //console.log(cleanList[i])
+        console.log("-----CLAIM #"+i+"-----")
+        console.log("Text: \n"+cleanList[i]["claim"])
+        console.log("User: "+cleanList[i]["ip"])
+    }
+})
+*/
 
 
 /*

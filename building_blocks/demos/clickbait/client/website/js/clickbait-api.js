@@ -1,4 +1,4 @@
-document.getElementById('jsonid2').style.width="800px";
+//document.getElementById('jsonid2').style.width="800px";
 
 function sendMessage_old(name){
     var jsonfile = jQuery.parseJSON(name);
@@ -28,6 +28,7 @@ function sendMessage(name){
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             alert(this.responseText);
+            console.log(this.response)
         }
     });
 //application/javascript
@@ -36,7 +37,7 @@ function sendMessage(name){
     var article_url = window.location.href
     var serverAddress = "http://turbina.gsd.inesc-id.pt:8092"
 
-    var request = serverAddress+"verify?claim="+claim+"&article="+article_url
+    var request = serverAddress+"/verify?claim="+claim+"&article="+article_url
 
     console.log("REQUEST::::::     "+request)
 
