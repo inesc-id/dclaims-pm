@@ -1,6 +1,6 @@
 # Clickbait Buster
 
-This demo is a proof of concept of the Clickbait Buster. It's goal is to allow users to verify news articles' titles.
+This demo is a proof of concept of the Clickbait Buster using the [Hypercerts](https://github.com/inesc-id/hypercerts-pm/blob/master/hypercerts-architecture.md) architecture. It's goal is to allow users to verify news articles' titles.
 
 ## Instructions
 0. Install [npm and nodejs](https://www.npmjs.com/get-npm).
