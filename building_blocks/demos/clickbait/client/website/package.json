@@ -38,13 +38,5 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "3.0.0"
-  },
-    "standard": {
-    "ignore": [
-      "js/clean-blog.js",
-      "js/jqBootstrapValidation.js",
-      "js/contact_me.js",
-      "gulpfile.js"
-  ]
-}
+  }
 }
