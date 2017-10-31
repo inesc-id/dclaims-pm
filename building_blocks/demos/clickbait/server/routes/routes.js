@@ -1,139 +1,118 @@
 var storage = require('node-persist')
 
-
-function addItem(key,item){
-    return new Promise(function(fulfill,reject){
-        storage.init().then(function(){
-            storage.setItem(key,item).then(function(value){
-                if(value){
-                    fulfill([key,value])    
-                }
-                else{
-                    fulfill(null)
-                }
-
-            })
-        })
-    })
-}
-
-function getItem(key) {
-    return new Promise(function(fulfill,reject){
-        storage.init().then(function(){
-            storage.getItem(key).then(function(value){
-                if(value){
-                    fulfill([key,value])
-                }
-                else{
-                    fulfill(null)
-                }
-
-            })
-        })
-    })
-}
-
-function handleVerification(nkey,newClaim){
-    return new Promise(function(fulfill,reject){
-        var newClaimArray = []
-        newClaimArray.push(newClaim)
-
-        getItem(nkey).then(value=>{
-            var newClaimsList
-            if(value){
-            console.log("Appending...")
-            newClaimsList = value[1].concat(newClaimArray)
-
-        }else{
-            console.log("Creating new list")
-            newClaimsList = newClaimArray
+function addItem (key, item) {
+  return new Promise(function (resolve, reject) {
+    storage.init().then(function () {
+      storage.setItem(key, item).then(function (value) {
+        if (value) {
+          resolve([key, value])
+        } else {
+          resolve(null)
         }
-        return addItem(nkey,newClaimsList)
-    }).then(value=>{
-            console.log("Sucess \n"+value)
-        fulfill("Sucess :)")
+      })
     })
-    })
+  })
 }
 
-function getClaimsJSONByUrl(url){
-    return new Promise(function(fulfill,reject){
-        getItem(url).then(value=>{
-            var claimsJSON = {}
-            claimsJSON.claimsList = value
-        fulfill(claimsJSON)
-
+function getItem (key) {
+  return new Promise(function (resolve, reject) {
+    storage.init().then(function () {
+      storage.getItem(key).then(function (value) {
+        if (value) {
+          resolve([key, value])
+        } else {
+          resolve(null)
+        }
+      })
     })
-    })
+  })
 }
 
-function getClaimsCountsJSONByUrl(url){
-    return new Promise(function(fulfill,reject){
-        getItem(url).then(values=>{
-            if(values){
-                fulfill(values[1].length)
-                //fulfill("3")
-            }
-            else{
-                fulfill("0")
-    }
+function handleVerification (nkey, newClaim) {
+  return new Promise(function (resolve, reject) {
+    var newClaimArray = []
+    newClaimArray.push(newClaim)
 
+    getItem(nkey).then(value => {
+      var newClaimsList
+      if (value) {
+        console.log('Appending...')
+        newClaimsList = value[1].concat(newClaimArray)
+      } else {
+        console.log('Creating new list')
+        newClaimsList = newClaimArray
+      }
+      return addItem(nkey, newClaimsList)
+    }).then(value => {
+      console.log('Sucess \n' + value)
+      resolve('Sucess :)')
     })
-    })
+  })
 }
 
-
-var appRouter = function(app) {
-
-    app.get('/getclaims',function(req,res){
-        var req_url = req.query.article
-
-        getClaimsJSONByUrl(req_url).then(value=>{
-            res.end(JSON.stringify(value))
-        }).catch((err) => {
-            console.log(err)
-        })
+function getClaimsJSONByUrl (url) {
+  return new Promise(function (resolve, reject) {
+    getItem(url).then(value => {
+      var claimsJSON = {}
+      claimsJSON.claimsList = value
+      resolve(claimsJSON)
     })
+  })
+}
 
-    app.get('/getcount',function(req,res){
-        var req_url = req.query.article
+function getClaimsCountsJSONByUrl (url) {
+  return new Promise(function (resolve, reject) {
+    getItem(url).then(values => {
+      if (values) {
+        resolve(values[1].length)
+                // resolve("3")
+      } else {
+        resolve('0')
+      }
+    })
+  })
+}
 
-        console.log(req_url)
+var appRouter = function (app) {
+  app.get('/getclaims', function (req, res) {
+    var reqURL = req.query.article
 
-        getClaimsCountsJSONByUrl(req_url).then(value=>{
-            console.log(value)
-        res.end(value.toString())
+    getClaimsJSONByUrl(reqURL).then(value => {
+      res.end(JSON.stringify(value))
     }).catch((err) => {
-            console.log(err)
+      console.log(err)
     })
+  })
 
+  app.get('/getcount', function (req, res) {
+    var reqURL = req.query.article
 
+    console.log(reqURL)
 
-    })
-
-    //ex: http://146.193.41.153:8092/verify?claim=veryfake&article=jn_99
-    app.get('/verify', function(req,res){
-        var req_field = req.query.claim
-        var req_url = req.query.article
-        var req_ip = req.ip
-
-
-        var vc = {claim:req_field,
-            url: req_url,
-            ip: req_ip}
-
-
-        handleVerification(req_url,vc)
-            .then(value=>{
-            res.send(value)
+    getClaimsCountsJSONByUrl(reqURL).then(value => {
+      console.log(value)
+      res.end(value.toString())
     }).catch((err) => {
-            console.log(err)
+      console.log(err)
     })
-    })
+  })
+
+    // ex: http://146.193.41.153:8092/verify?claim=veryfake&article=jn_99
+  app.get('/verify', function (req, res) {
+    var reqField = req.query.claim
+    var reqURL = req.query.article
+    var reqIP = req.ip
+
+    var vc = {claim: reqField,
+      url: reqURL,
+      ip: reqIP}
+
+    handleVerification(reqURL, vc)
+            .then(value => {
+              res.send(value)
+            }).catch((err) => {
+              console.log(err)
+            })
+  })
 }
-module.exports = appRouter;
-
-
-
-
-
+module.exports = appRouter
