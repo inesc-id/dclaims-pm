@@ -1,5 +1,0 @@
-QmWAyP98UjeCTSrU8eNx36qGZacZPPA7tEEodDuSDkR2fB 
-
-proofs: QmSMppxttp5ioaZwmSWCWHnwMGUasmQRtcE3TdtMy2vAJG
-rules: QmTcr8MMP6XQYDigMYY6YnemGHTMtETZ8FXvgNsCLVF3ht
-cert: QmdWaUeoKCbMRTndAWAqXw52tBUPogGvkrWtoVwdRpYDAB
