@@ -57,6 +57,9 @@ The week's focus is to implement a client based certificate revocation mechanism
 - [ ] ~~First draft of the paper of the ideal Verifiable Claims System Survey~~
 - [ ] Establish specific goals for the whitepaper to be completed by the end of november
     - Establish goals for implementation
+- [ ] Decouple the plugin from the website
+- [ ] Generate ID's from news titles
+- [ ] Dynamically search for every news article and interact with it 
 
 
 ## Nov
