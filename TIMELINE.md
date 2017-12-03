@@ -71,7 +71,13 @@ The week's focus is to implement a client based certificate revocation mechanism
   Offline week for Joao
 #### Week - Nov 20
 #### Week - Nov 27
-- [ ] Complete Certificate Revocation Implementation
+Status:
+- [x] Hypercerts-news: js app that attaches the necessary elements to a news page to make it work with Hypercerts
+- [x] Hypercerts-news-web-extension: Same as Hypercerts news but bundled as a Chrome extension
+- [x]  Make the extension look pretty 🙏
+- [x] Improve repo structure (clearly separate between hypercerts-core and hypercerts-news-web-extension)
+- [ ] Hypercerts-core: Current version works, but I'm working on a surprise element for Monday
+- [x] Make the repo more community friendly (carried out from last week's goals) 
 
 ## Dec
 
