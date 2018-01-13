@@ -1,4 +1,4 @@
-# Hypercerts
+# DClaims
 
 - João Santos' M.Sc Thesis
 - Universidade de Lisboa, Instituto Superior Técnico
