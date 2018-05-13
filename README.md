@@ -9,7 +9,13 @@
 
 ## Project Description
 
-TODO: add a one paragraph description here.
+Unreliable and misleading information on the web can have a severe impact on democracies. Web annotations are a way to add information to web pages. DClaims is a censorship-resistant and decentralised web annotations system, built on top of IPFS and Ethereum.
+
+## Codebase
+- [DClaims-Core](https://github.com/inesc-id/dclaims-core)
+- [DClaims-News](https://github.com/inesc-id/dclaims-news)
+- [DClaims-DataFormat](https://github.com/joaosantos15/hypercerts-news-claims)
+- [DClaims-Publisher](https://github.com/joaosantos15/hypercerts-publisher)
 
 ## Documents
 
