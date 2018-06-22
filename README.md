@@ -19,13 +19,12 @@ Unreliable and misleading information on the web can have a severe impact on dem
 - [DClaims-DataFormat](https://github.com/joaosantos15/hypercerts-news-claims)
 - [DClaims-Publisher](https://github.com/joaosantos15/hypercerts-publisher)
 
-## Documents
+## Publications
 
-- [Thesis Project Document](./thesis-project-doc)
-- [Meeting Notes](./meeting-notes)
-- [Timeline](./TIMELINE.md)
+- **[Thesis Document:](https://github.com/inesc-id/dclaims-pm/blob/master/thesis-review/Thesis_DClaims_JoaoSantos.pdf)** A detailed explanation of the DClaims protocol, implementation and system testing.
+- **[Extended Abstract:](https://github.com/inesc-id/dclaims-pm/blob/master/thesis-review/ExtendedAbstract_DClaims_JoaoSantos.pdf)** A shorter version of the thesis document. Quicker to read, but many interesting details.
 
-## Publications & Talks
 
-> [SOON™](http://i0.kym-cdn.com/photos/images/original/000/117/014/GsE3k.jpg)
-
+## Talks
+> IPFS Lisbon Meetup Jan 2018 ([slides](https://github.com/inesc-id/dclaims-pm/blob/master/presentations/dlcaims_ifps_meetup_jan2018.pdf))
+[![](https://github.com/inesc-id/dclaims-pm/blob/master/images/ipfs-meetup-thumbnail.jpg?raw=true)](https://www.youtube.com/watch?v=4oIvWldzT4o&t=4s)
