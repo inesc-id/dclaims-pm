@@ -23,6 +23,7 @@ Unreliable and misleading information on the web can have a severe impact on dem
 
 - **[Thesis Document:](https://github.com/inesc-id/dclaims-pm/blob/master/thesis-review/Thesis_DClaims_JoaoSantos.pdf)** A detailed explanation of the DClaims protocol, implementation and system testing.
 - **[Extended Abstract:](https://github.com/inesc-id/dclaims-pm/blob/master/thesis-review/ExtendedAbstract_DClaims_JoaoSantos.pdf)** A shorter version of the thesis document. Quicker to read, but many interesting details.
+- **[ArXiv Version:](https://arxiv.org/pdf/1912.03388.pdf)** Published as an extended version of the one published at SAC2020.
 
 
 ## Talks
